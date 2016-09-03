@@ -41,7 +41,7 @@
 
 ## 1、图片示例：
 
-![DSAlert.gif](http://git.oschina.net/dsteam/DSAlertDemo/blob/master/DSAlert.gif?dir=0&filepath=DSAlert.gif)
+![DSAlert.gif](https://github.com/DS-Team/DSAlert-OC/blob/master/DSAlert.gif)
 
 ---
 
