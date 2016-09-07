@@ -4,9 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>DSTableCell.nib</key>
+		<key>DSTableCell~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		ln8wqKGoFT3V1t/KtuTLfhSat9g=
+		pIrm94TpYpJz5X8D4fqCdTYUjSM=
+		</data>
+		<key>DSTableCell~ipad.nib/runtime.nib</key>
+		<data>
+		VW+8AlutvWDs1hb/QZYvWDee4yU=
+		</data>
+		<key>DSTableCell~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		N6rVwxMUiWZlW1JU4HybjSoTMNw=
+		</data>
+		<key>DSTableCell~iphone.nib/runtime.nib</key>
+		<data>
+		x1NSWz90MJaL/l62Gb5qEcen9fI=
 		</data>
 		<key>Headers/DSActionSheet.h</key>
 		<data>
@@ -16,26 +28,63 @@
 		<data>
 		f6RMTOA3wG/D4bKRIzmagb12VvI=
 		</data>
+		<key>Headers/DSAlertFrameWork.h</key>
+		<data>
+		gVEavIUCzZaPG13wUSrOt39AGZE=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		4gqt2RsQNo3owbSeHYHCuwv6/H0=
+		xmCpQG4t8jmvDmYPInx2k+9joWw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Bxy+EO64MK9pTXHsL7e/gClBt3E=
+		fgyZyYFNPv2hetJzSjax+Ss6uYE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DSTableCell.nib</key>
+		<key>DSTableCell~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ln8wqKGoFT3V1t/KtuTLfhSat9g=
+			pIrm94TpYpJz5X8D4fqCdTYUjSM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lKiSVvtXMcZUescSfriejeM0f/1B4ZHKb31no0AVHs8=
+			QB4PQqC2rUYcH2kx1E6Di3iMBAaXM94qEghrgtff5b4=
+			</data>
+		</dict>
+		<key>DSTableCell~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VW+8AlutvWDs1hb/QZYvWDee4yU=
+			</data>
+			<key>hash2</key>
+			<data>
+			UzeIJyfDdjaiXt2H51ko2Idjw/jcutWfMPi8Ru3n4+U=
+			</data>
+		</dict>
+		<key>DSTableCell~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N6rVwxMUiWZlW1JU4HybjSoTMNw=
+			</data>
+			<key>hash2</key>
+			<data>
+			agdHDbMfhnWjhLRvD9mSFHGH9VevC/UcYdbKwYPDMv4=
+			</data>
+		</dict>
+		<key>DSTableCell~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x1NSWz90MJaL/l62Gb5qEcen9fI=
+			</data>
+			<key>hash2</key>
+			<data>
+			4uJzeu/k8u7ov85guA4hiPPF8JabKfWi6Ywf/U2otZc=
 			</data>
 		</dict>
 		<key>Headers/DSActionSheet.h</key>
@@ -60,15 +109,26 @@
 			jCUuEbQXOZ5JOu+C4A3pk/NDf2+a7yxOrx7h7edxDRs=
 			</data>
 		</dict>
+		<key>Headers/DSAlertFrameWork.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gVEavIUCzZaPG13wUSrOt39AGZE=
+			</data>
+			<key>hash2</key>
+			<data>
+			iMbDbI9C5sETBKuVskgyLV72Vhka+DXlXKQU4L0iZpg=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bxy+EO64MK9pTXHsL7e/gClBt3E=
+			fgyZyYFNPv2hetJzSjax+Ss6uYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			q6s0vbg47CKzXhkns0lVBX7XsphI9nHRdcEM9d/NUCo=
+			+aHx+lUT2pWepSJCGXhwYG884NYx8AwrhkyHfOz8bqM=
 			</data>
 		</dict>
 	</dict>

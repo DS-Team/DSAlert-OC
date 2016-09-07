@@ -1,6 +1,0 @@
-framework module DSAlert {
-  umbrella header "DSAlert.h"
-
-  export *
-  module * { export * }
-}
