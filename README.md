@@ -1,5 +1,5 @@
 #DSAlert
-目前为止，最为精简的 alert 封装！DSAlert 让你的弹框不再孤单！
+目前为止，最为精简的 alert 和 actionSheet 封装！DSAlert 让你的弹框不再孤单！
 
 ---
 
@@ -30,7 +30,9 @@
 如果使用 DSActionSheet 需导入头文件：<br>
 `#import "DSActionSheet.h"`
 * 0.3、使用方法3：frameWork ，把demo中的frameWork直接拖入项目即可<br>
-`#import <DSAlert/DSAlert.h>`
+`#import <DSAlert/DSAlert.h>`<br>
+`#import <DSAlert/DSActionSheet.h>`
+
 * 0.4、项目源码地址：<br>
  OC版    ：[https://github.com/DS-Team/DSAlert-OC](https://github.com/DS-Team/DSAlert-OC)<br>
  swift 版：[https://github.com/DS-Team/DSAlert-swift](https://github.com/DS-Team/DSAlert-swift)
