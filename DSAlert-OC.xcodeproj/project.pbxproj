@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4DA2ECF1D80348D002B14D7 /* DSAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA2ECE1D80348D002B14D7 /* DSAlert.framework */; };
 		C4EA7C231D7AD19D00D790CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C221D7AD19D00D790CA /* main.m */; };
 		C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C251D7AD19D00D790CA /* AppDelegate.m */; };
 		C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C281D7AD19D00D790CA /* ViewController.m */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4DA2ECE1D80348D002B14D7 /* DSAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlert.framework; sourceTree = "<group>"; };
 		C4EA7C1E1D7AD19D00D790CA /* DSAlert-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSAlert-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EA7C221D7AD19D00D790CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4EA7C241D7AD19D00D790CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DA2ECF1D80348D002B14D7 /* DSAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		C4EA7C201D7AD19D00D790CA /* DSAlert-OC */ = {
 			isa = PBXGroup;
 			children = (
+				C4DA2ECE1D80348D002B14D7 /* DSAlert.framework */,
 				C4EA7C381D7AD1D400D790CA /* DSActionSheet */,
 				C4EA7C3E1D7AD1D400D790CA /* DSAlert */,
 				C4EA7C241D7AD19D00D790CA /* AppDelegate.h */,
@@ -317,6 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DSAlert-OC",
+				);
 				INFOPLIST_FILE = "DSAlert-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
@@ -328,6 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DSAlert-OC",
+				);
 				INFOPLIST_FILE = "DSAlert-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
@@ -354,6 +366,7 @@
 				C4EA7C371D7AD19D00D790CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
