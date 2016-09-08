@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4DA2F081D804D55002B14D7 /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA2F071D804D55002B14D7 /* DSAlertFrameWork.framework */; };
+		C47699931D8114F400583C8E /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47699921D8114F400583C8E /* DSAlertFrameWork.framework */; };
 		C4EA7C231D7AD19D00D790CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C221D7AD19D00D790CA /* main.m */; };
 		C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C251D7AD19D00D790CA /* AppDelegate.m */; };
 		C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C281D7AD19D00D790CA /* ViewController.m */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C4DA2F071D804D55002B14D7 /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
+		C47699921D8114F400583C8E /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
 		C4EA7C1E1D7AD19D00D790CA /* DSAlert-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSAlert-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EA7C221D7AD19D00D790CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4EA7C241D7AD19D00D790CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DA2F081D804D55002B14D7 /* DSAlertFrameWork.framework in Frameworks */,
+				C47699931D8114F400583C8E /* DSAlertFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		C4EA7C201D7AD19D00D790CA /* DSAlert-OC */ = {
 			isa = PBXGroup;
 			children = (
-				C4DA2F071D804D55002B14D7 /* DSAlertFrameWork.framework */,
+				C47699921D8114F400583C8E /* DSAlertFrameWork.framework */,
 				C4EA7C381D7AD1D400D790CA /* DSActionSheet */,
 				C4EA7C3E1D7AD1D400D790CA /* DSAlert */,
 				C4EA7C241D7AD19D00D790CA /* AppDelegate.h */,
