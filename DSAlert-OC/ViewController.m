@@ -30,6 +30,8 @@
 
 
 #import "ViewController.h"
+#import "Alert6.h"
+#import "UIView+AutoLayout.h"
 
 /*! 使用方法一：文件夹拖入 */
 //#import "DSAlert.h"
@@ -49,16 +51,19 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 @interface ViewController ()
 @property (weak, nonatomic  ) IBOutlet UITableView  *tableView;
 
-@property (nonatomic, strong) DSAlert               *alertView1;
-@property (nonatomic, strong) DSAlert               *alertView2;
-@property (nonatomic, strong) DSAlert               *alertView3;
-@property (nonatomic, strong) DSAlert               *alertView4;
-@property (nonatomic, strong) DSAlert               *alertView5;
+@property (nonatomic, strong) DSAlert      *alertView1;
+@property (nonatomic, strong) DSAlert      *alertView2;
+@property (nonatomic, strong) DSAlert      *alertView3;
+@property (nonatomic, strong) DSAlert      *alertView4;
+@property (nonatomic, strong) DSAlert      *alertView5;
 
-@property (nonatomic,strong ) UIButton              *chooseBtn;
-@property (nonatomic,strong ) UILabel               *titleLabel;
+@property (nonatomic, strong) UIView       *viewPwdBgView;
+@property (nonatomic, strong) UITextField  *pwdTextField;
 
-@property (strong, nonatomic) NSArray               *dataArray;
+@property (nonatomic,strong ) UIButton     *chooseBtn;
+@property (nonatomic,strong ) UILabel      *titleLabel;
+
+@property (strong, nonatomic) NSArray      *dataArray;
 
 @end
 
@@ -72,11 +77,12 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                                                  @"2、自定义按钮颜色",
                                                  @"3、自定义背景图片",
                                                  @"4、内置图片和文字，可滑动查看",
-                                                 @"5、完全自定义alert"
+                                                 @"5、完全自定义alert",
+                                                 @"6、完全自定义alert-autolayout"
                                                  ],
-                      @[@"6、actionsheet",
-                        @"7、actionsheet带标题",
-                        @"8、actionsheet带标题带图片"],
+                      @[@"1、actionsheet",
+                        @"2、actionsheet带标题",
+                        @"3、actionsheet带标题带图片"],
                       @[@"DSAlert特点：\n1、手势触摸隐藏开关，可随时开关\n2、可以自定义背景图片、背景颜色、按钮颜色\n3、可以添加文字和图片，且可以滑动查看！\n4、横竖屏适配完美\n5、有各种炫酷动画展示你的alert\n6、理论完全兼容现有所有 iOS 系统版本"
                         ], nil];
     }
@@ -227,7 +233,9 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
         case 5:
             [self performSelector:@selector(alert5)];
             break;
-            
+        case 6:
+            [self alert6];
+            break;
         default:
             break;
     }
@@ -412,46 +420,188 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 - (void)alert5
 {
     /*! 5、完全自定义alert */
-    UIView *view1                = [UIView new];
-    view1.frame                  = CGRectMake(30, 100, SCREENWIDTH - 60, 200);
-    view1.backgroundColor        = [UIColor yellowColor];
-    view1.layer.masksToBounds    = YES;
-    view1.layer.cornerRadius     = 10.0f;
-    //    view1.clipsToBounds    = YES;
+    DSWeak;
+    self.viewPwdBgView.hidden = NO;
+    [DSAlert ds_showCustomView:_viewPwdBgView configuration:^(DSAlert *tempView) {
+        tempView.isTouchEdgeHide = NO;
+        weakSelf.alertView5 = tempView;
+    }];
+}
+
+- (void)alert6 {
+    DSWeak;
+    Alert6 *view = [Alert6 makeViewWithFrame:CGRectMake(30, 100, SCREENWIDTH - 60, 200) Title:@"测试AutoLayout方法" buttonTitles:@[@"取消",@"确定"] buttonBlock:^(NSInteger index) {
+        NSLog(@"%ld",(long)index);
+        
+        [weakSelf.alertView5 ds_dismissAlertView];
+    }];
+    view.layer.masksToBounds = true;
+    view.layer.cornerRadius = 8.0;
+    view.translatesAutoresizingMaskIntoConstraints = false;
+    _alertView5                  = [[DSAlert alloc] initWithCustomView:view];
     
-    _titleLabel                  = [UILabel new];
-    _titleLabel.frame            = CGRectMake(0, 0, view1.frame.size.width, 40);
-    _titleLabel.text             = @"测试title";
-    _titleLabel.textAlignment    = NSTextAlignmentCenter;
-    _titleLabel.font             = [UIFont systemFontOfSize:18];
-    _titleLabel.backgroundColor  = [UIColor greenColor];
-    [view1 addSubview:_titleLabel];
-    _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    
-    _chooseBtn                   = [[UIButton alloc]initWithFrame:CGRectMake(0, view1.frame.size.height - 40, view1.frame.size.width, 40)];
-    //        _chooseBtn         = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_chooseBtn setTitle:@"取消" forState:UIControlStateNormal];
-    [_chooseBtn setBackgroundColor:[UIColor redColor]];
-    [_chooseBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_chooseBtn addTarget:self action:@selector(cancleButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [view1 addSubview:_chooseBtn];
-    _chooseBtn.autoresizingMask  = UIViewAutoresizingFlexibleWidth;
-    
-    _alertView5                  = [[DSAlert alloc] initWithCustomView:view1];
     _alertView5.showAnimate = YES;
     [_alertView5 ds_showAlertView];
 }
 
-- (void)cancleButtonAction:(UIButton *)sender
-{
-    NSLog(@"点击了取消按钮！");
-    /*! 隐藏alert */
-    [_alertView5 ds_dismissAlertView];
-}
+//- (void)cancleButtonAction:(UIButton *)sender
+//{
+//    NSLog(@"点击了取消按钮！");
+//    /*! 隐藏alert */
+//    [_alertView5 ds_dismissAlertView];
+//}
+
+
 
 - (BOOL)prefersStatusBarHidden {
     return false;
 }
 
+- (UIView *)viewPwdBgView
+{
+    if (!_viewPwdBgView)
+    {
+        _viewPwdBgView                         = [UIView new];
+        _viewPwdBgView.frame                   = CGRectMake(30, 100, SCREENWIDTH - 60, 160);
+        
+        _viewPwdBgView.backgroundColor         = [UIColor whiteColor];
+        _viewPwdBgView.layer.masksToBounds     = YES;
+        _viewPwdBgView.layer.cornerRadius      = 10.0f;
+        
+        CGFloat buttonWith                     = (SCREENWIDTH - 60)/2 - 0.5;
+        CGFloat buttonHeight                   = 40;
+        
+        UILabel *titleLabel                    = [UILabel new];
+        titleLabel.frame                       = CGRectMake(0, 0, _viewPwdBgView.frame.size.width, buttonHeight);
+        titleLabel.text                        = @"请输入观看密码";
+        titleLabel.textAlignment               = NSTextAlignmentCenter;
+        titleLabel.font                        = [UIFont systemFontOfSize:18];
+        titleLabel.backgroundColor             = [UIColor clearColor];
+        
+        UIView *lineView1                      = [UIView new];
+        lineView1.frame                        = CGRectMake(0, CGRectGetMaxY(titleLabel.frame), _viewPwdBgView.frame.size.width, 1);
+        lineView1.backgroundColor              = [UIColor lightGrayColor];
+        
+        _pwdTextField                          = [UITextField new];
+        _pwdTextField.frame                    = CGRectMake(20, CGRectGetMaxY(lineView1.frame) + 20, _viewPwdBgView.frame.size.width - 40, buttonHeight);
+        _pwdTextField.borderStyle              = UITextBorderStyleRoundedRect;
+        _pwdTextField.keyboardType             = UIKeyboardTypeNumberPad;
+        _pwdTextField.secureTextEntry          = YES;
+        _pwdTextField.textAlignment            = NSTextAlignmentCenter;
+        _pwdTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+//        _pwdTextField.autoresizingMask         = UIViewAutoresizingFlexibleWidth;
+        [_pwdTextField becomeFirstResponder];
+        
+        UIView *lineView2                      = [UIView new];
+        lineView2.frame                        = CGRectMake(0, _viewPwdBgView.frame.size.height - 41, _viewPwdBgView.frame.size.width, 1);
+        lineView2.backgroundColor              = [UIColor lightGrayColor];
+        
+        UIButton *cancleButton                 = [[UIButton alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(lineView2.frame), buttonWith, buttonHeight)];
+        [cancleButton setTitle:@"取消" forState:UIControlStateNormal];
+        [cancleButton setBackgroundColor:[UIColor clearColor]];
+        [cancleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [cancleButton addTarget:self action:@selector(cancleButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        cancleButton.autoresizingMask          = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+        
+        UIView *lineView3                      = [UIView new];
+        lineView3.frame                        = CGRectMake(buttonWith, CGRectGetMinY(cancleButton.frame), 1, buttonHeight);
+        lineView3.backgroundColor              = [UIColor lightGrayColor];
+        
+        UIButton *sureButton                   = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(lineView3.frame), CGRectGetMinY(cancleButton.frame), buttonWith, buttonHeight)];
+        [sureButton setTitle:@"确定" forState:UIControlStateNormal];
+        [sureButton setBackgroundColor:[UIColor clearColor]];
+        [sureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [sureButton addTarget:self action:@selector(cancleButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        sureButton.autoresizingMask            = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+        
+        cancleButton.tag                       = 1;
+        sureButton.tag                         = 2;
+        
+        [_viewPwdBgView addSubview:titleLabel];
+        [_viewPwdBgView addSubview:lineView1];
+        [_viewPwdBgView addSubview:_pwdTextField];
+        [_viewPwdBgView addSubview:lineView2];
+        [_viewPwdBgView addSubview:cancleButton];
+        [_viewPwdBgView addSubview:lineView3];
+        [_viewPwdBgView addSubview:sureButton];
+        
+        //这里是让titleLabel跟父view上左右边距为0,底部间距不设置
+        [titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeBottom];
+        //设置titleLabel的高度为buttonHeight
+        [titleLabel autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+        
+        //设置lineView1与父view左右间距为0,顶部和titleLabel的底部间距为0,高度为1
+        [lineView1 autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
+        [lineView1 autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
+        [lineView1 autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:titleLabel];
+        [lineView1 autoSetDimension:ALDimensionHeight toSize:1.0];
+        
+        //设置_pwdTextField与父view左右间距为20,顶部和lineView1的底部间距为20,高度为buttonHeight
+        [_pwdTextField autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView withOffset:20];
+        [_pwdTextField autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView withOffset:-20];
+        [_pwdTextField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:lineView1 withOffset:20];
+        [_pwdTextField autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+        
+        //这里是让lineView2跟父view上左右边距为0,顶部间距不设置,底部跟父view间距41,高度为buttonHeight
+        [lineView2 autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 41.0, 0) excludingEdge:ALEdgeTop];
+        [lineView2 autoSetDimension:ALDimensionHeight toSize:1.0];
+        
+        //设置cancleButton与父view左底间距为0,高度为buttonHeight,宽度为buttonWith
+        [cancleButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
+        [cancleButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+        [cancleButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+        
+        //设置lineView3与父view底间距为0,高度为buttonHeight,左边与cancelButton的右间距为0,宽度为1
+        [lineView3 autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:cancleButton];
+        [lineView3 autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+        [lineView3 autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+        [lineView3 autoSetDimension:ALDimensionWidth toSize:1];
+        
+        //设置sureButton与父view底右间距为0,高度为buttonHeight,左边与cancelButton的右间距为0
+        [sureButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:lineView3];
+        [sureButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+        [sureButton autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
+        [sureButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+        [sureButton autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:cancleButton];
+        
+    }
+    return _viewPwdBgView;
+}
+
+- (void)cancleButtonAction:(UIButton *)sender
+{
+    
+    if (sender.tag == 1)
+    {
+        NSLog(@"点击了取消按钮！");
+        /*! 隐藏alert */
+        [_alertView5 ds_dismissAlertView];
+        [_pwdTextField resignFirstResponder];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else
+    {
+        NSLog(@"点击了确定按钮！密码：%@", _pwdTextField.text);
+        
+        //        WEAKSELF;
+        if (_pwdTextField.text.length < 4 || _pwdTextField.text.length > 8 )
+        {
+            self.pwdTextField.text = @"";
+            [DSAlert ds_showAlertWithTitle:@"温馨提示：" message:@"请输入正确的密码！" image:nil buttonTitles:@[@"确定"] configuration:^(DSAlert *tempView) {
+                //                weakSelf.alert2 = tempView;
+            } actionClick:^(NSInteger index) {
+                if (1 == index)
+                {
+                    return;
+                }
+            }];
+            return;
+        }
+        /*! 隐藏alert */
+        [_alertView5 ds_dismissAlertView];
+        [_pwdTextField resignFirstResponder];
+    }
+}
 
 @end

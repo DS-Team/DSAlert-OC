@@ -85,6 +85,11 @@ typedef NS_ENUM(NSUInteger, DSAlertAnimatingStyle) {
  */
 @property (strong, nonatomic) void (^buttonActionBlock)(NSInteger index);
 
+/**
+ *  autoresizing的开关,如果在使用全自定义的方式而且使用autoresizing的情况下可以设置这个为true.  默认:false
+ */
+@property (assign, nonatomic) BOOL UseAutoresizing;
+
 
 #pragma mark - 1、高度封装一行即可完全配置alert，如不习惯，可使用第二种常用方法
 /*!

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C47699931D8114F400583C8E /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47699921D8114F400583C8E /* DSAlertFrameWork.framework */; };
+		610557B21D81A3BD006B47A4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */; };
+		613B1C9E1D81592900625FFF /* Alert6.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B1C9D1D81592900625FFF /* Alert6.m */; };
+		613B1CA01D81593300625FFF /* Alert6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B1C9F1D81593300625FFF /* Alert6.xib */; };
+		61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */; };
 		C4EA7C231D7AD19D00D790CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C221D7AD19D00D790CA /* main.m */; };
 		C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C251D7AD19D00D790CA /* AppDelegate.m */; };
 		C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C281D7AD19D00D790CA /* ViewController.m */; };
@@ -26,7 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C47699921D8114F400583C8E /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
+		610557B01D81A3BD006B47A4 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		613B1C9C1D81592900625FFF /* Alert6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert6.h; sourceTree = "<group>"; };
+		613B1C9D1D81592900625FFF /* Alert6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert6.m; sourceTree = "<group>"; };
+		613B1C9F1D81593300625FFF /* Alert6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alert6.xib; sourceTree = "<group>"; };
+		61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
 		C4EA7C1E1D7AD19D00D790CA /* DSAlert-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSAlert-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EA7C221D7AD19D00D790CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4EA7C241D7AD19D00D790CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47699931D8114F400583C8E /* DSAlertFrameWork.framework in Frameworks */,
+				61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +92,7 @@
 		C4EA7C201D7AD19D00D790CA /* DSAlert-OC */ = {
 			isa = PBXGroup;
 			children = (
-				C47699921D8114F400583C8E /* DSAlertFrameWork.framework */,
+				61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */,
 				C4EA7C381D7AD1D400D790CA /* DSActionSheet */,
 				C4EA7C3E1D7AD1D400D790CA /* DSAlert */,
 				C4EA7C241D7AD19D00D790CA /* AppDelegate.h */,
@@ -93,10 +101,15 @@
 				C4EA7C281D7AD19D00D790CA /* ViewController.m */,
 				C4EA7C481D7AD1EE00D790CA /* ViewController2.h */,
 				C4EA7C491D7AD1EE00D790CA /* ViewController2.m */,
+				613B1C9C1D81592900625FFF /* Alert6.h */,
+				613B1C9D1D81592900625FFF /* Alert6.m */,
+				613B1C9F1D81593300625FFF /* Alert6.xib */,
 				C4EA7C4D1D7AD26000D790CA /* 123.png */,
 				C4EA7C4E1D7AD26100D790CA /* 背景.jpg */,
 				C4EA7C4F1D7AD26100D790CA /* 美女.jpg */,
 				C4EA7C4A1D7AD1EE00D790CA /* Main.storyboard */,
+				610557B01D81A3BD006B47A4 /* UIView+AutoLayout.h */,
+				610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */,
 				C4EA7C2D1D7AD19D00D790CA /* Assets.xcassets */,
 				C4EA7C2F1D7AD19D00D790CA /* LaunchScreen.storyboard */,
 				C4EA7C321D7AD19D00D790CA /* Info.plist */,
@@ -167,6 +180,7 @@
 				TargetAttributes = {
 					C4EA7C1D1D7AD19D00D790CA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TRVB83KBJJ;
 					};
 				};
 			};
@@ -194,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EA7C511D7AD26100D790CA /* 背景.jpg in Resources */,
+				613B1CA01D81593300625FFF /* Alert6.xib in Resources */,
 				C4EA7C311D7AD19D00D790CA /* LaunchScreen.storyboard in Resources */,
 				C4EA7C521D7AD26100D790CA /* 美女.jpg in Resources */,
 				C4EA7C2E1D7AD19D00D790CA /* Assets.xcassets in Resources */,
@@ -211,9 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EA7C461D7AD1D400D790CA /* CALayer+Animation.m in Sources */,
+				613B1C9E1D81592900625FFF /* Alert6.m in Sources */,
 				C4EA7C471D7AD1D400D790CA /* DSAlert.m in Sources */,
 				C4EA7C441D7AD1D400D790CA /* DSTableCell.m in Sources */,
 				C4EA7C431D7AD1D400D790CA /* DSActionSheet.m in Sources */,
+				610557B21D81A3BD006B47A4 /* UIView+AutoLayout.m in Sources */,
 				C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */,
 				C4EA7C4B1D7AD1EE00D790CA /* ViewController2.m in Sources */,
 				C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */,
@@ -321,6 +338,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DSAlert-OC",
@@ -329,6 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -336,6 +356,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DSAlert-OC",
@@ -344,6 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
