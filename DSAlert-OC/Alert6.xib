@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="Alert6">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOv-cu-hIb">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNU-lU-NM1">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="vRO-rn-Kte"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-Uj-5P3">
+                            <rect key="frame" x="0.0" y="119" width="260" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="TUf-76-oNh"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="0yv-eX-SQa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LH-db-EHG">
+                            <rect key="frame" x="0.0" y="160" width="260" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="mZX-VP-4fG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.61176470589999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="4LH-db-EHG" firstAttribute="leading" secondItem="zOv-cu-hIb" secondAttribute="leading" id="0He-Jq-1Qb"/>
+                        <constraint firstItem="4LH-db-EHG" firstAttribute="top" secondItem="hfd-Uj-5P3" secondAttribute="bottom" constant="1" id="Cob-vn-Gfc"/>
+                        <constraint firstItem="4LH-db-EHG" firstAttribute="height" secondItem="hfd-Uj-5P3" secondAttribute="height" id="EOS-Vm-v8e"/>
+                        <constraint firstAttribute="trailing" secondItem="hfd-Uj-5P3" secondAttribute="trailing" id="REl-Y6-Q8n"/>
+                        <constraint firstAttribute="trailing" secondItem="zNU-lU-NM1" secondAttribute="trailing" id="d8l-Oa-d85"/>
+                        <constraint firstItem="hfd-Uj-5P3" firstAttribute="leading" secondItem="zOv-cu-hIb" secondAttribute="leading" id="gYf-Zc-qku"/>
+                        <constraint firstItem="zNU-lU-NM1" firstAttribute="leading" secondItem="zOv-cu-hIb" secondAttribute="leading" id="pOh-q2-XSh"/>
+                        <constraint firstAttribute="bottom" secondItem="4LH-db-EHG" secondAttribute="bottom" id="ttD-8h-R4U"/>
+                        <constraint firstItem="zNU-lU-NM1" firstAttribute="top" secondItem="zOv-cu-hIb" secondAttribute="top" id="vKi-1q-Wdf"/>
+                        <constraint firstAttribute="trailing" secondItem="4LH-db-EHG" secondAttribute="trailing" id="xYl-y0-SAz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zOv-cu-hIb" secondAttribute="trailing" id="424-jC-myM"/>
+                <constraint firstItem="zOv-cu-hIb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FNq-KX-FIV"/>
+                <constraint firstItem="zOv-cu-hIb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T7p-Qr-PVT"/>
+                <constraint firstAttribute="bottom" secondItem="zOv-cu-hIb" secondAttribute="bottom" id="lBN-tE-hm2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="hfd-Uj-5P3" id="alZ-0U-Vx5"/>
+                <outlet property="rightBtn" destination="4LH-db-EHG" id="kfG-E8-30M"/>
+                <outlet property="titleLabel" destination="zNU-lU-NM1" id="xSe-tM-5EA"/>
+            </connections>
+            <point key="canvasLocation" x="475" y="392"/>
+        </view>
+    </objects>
+</document>

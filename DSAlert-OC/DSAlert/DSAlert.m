@@ -35,6 +35,7 @@
 #import <Accelerate/Accelerate.h>
 #import <float.h>
 #import "CALayer+Animation.h"
+#import "UIView+AutoLayout.h"
 
 @interface UIImage (DSAlertImageEffects)
 
@@ -264,6 +265,7 @@
 @property (assign, nonatomic        ) CGFloat                  viewWidth;
 @property (assign, nonatomic        ) CGFloat                  viewHeight;
 
+@property (strong, nonatomic) NSArray *selfContainsArray;
 
 @property (nonatomic, assign, getter=isAnimating) BOOL animating;
 
@@ -283,6 +285,7 @@
     if (self = [super initWithFrame:CGRectZero])
     {
         self.subView = customView;
+        self.subView.translatesAutoresizingMaskIntoConstraints = false;
         [self performSelector:@selector(setupUI)];
     }
     return self;
@@ -327,6 +330,8 @@
     [_containerView addSubview:_scrollView];
     
     [self addSubview:_containerView];
+
+    
     [self performSelector:@selector(setupCommonUI)];
 }
 
@@ -348,6 +353,18 @@
     
 
     [self addSubview:self.subView];
+    
+    if ( !self.subView.translatesAutoresizingMaskIntoConstraints ) {
+        [self.subView autoAlignAxisToSuperviewAxis:ALAxisVertical];
+        [self.subView autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        
+        [self.subView autoSetDimension:ALDimensionHeight toSize:CGRectGetHeight(self.subView.frame)];
+        
+        [self.subView autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:30 relation:NSLayoutRelationEqual];
+        [self.subView autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:30 relation:NSLayoutRelationEqual];
+        [self.subView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:50 relation:NSLayoutRelationGreaterThanOrEqual];
+        [self.subView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:50 relation:NSLayoutRelationGreaterThanOrEqual];
+    }
     
     [self performSelector:@selector(setupCommonUI)];
 }
@@ -456,6 +473,12 @@
     _animatingStyle = animatingStyle;
 }
 
+- (void)setUseAutoresizing:(BOOL)UseAutoresizing {
+    _UseAutoresizing = UseAutoresizing;
+    
+    self.subView.translatesAutoresizingMaskIntoConstraints = UseAutoresizing;
+}
+
 #pragma mark - **** 手势消失方法
 - (void)dismissTapAction:(UITapGestureRecognizer *)tapG
 {
@@ -475,8 +498,13 @@
 {
     DSWeak;
     UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
-    
     [window addSubview:self];
+    
+    if ( !self.subView.translatesAutoresizingMaskIntoConstraints ) {
+        [self autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+    }else {
+        
+    }
     
     [self layoutMySubViews];
     
@@ -511,7 +539,11 @@
     {
         if (self.subView)
         {
-            self.subView.center = window.center;
+            if ( self.subView.translatesAutoresizingMaskIntoConstraints ) {
+                self.subView.center = window.center;
+            }else {
+                
+            }
         }
         else if (self.containerView)
         {
@@ -909,9 +941,13 @@
     
     if (self.subView)
     {
-        self.frame                = CGRectMake(0.f, 0.f, self.viewWidth, self.viewHeight);
-        self.subView.frame        = CGRectMake(50.f, 0.f, self.viewWidth - 100.f, CGRectGetHeight(self.subView.frame));
-        self.subView.center       = CGPointMake(self.viewWidth/2.f, self.viewHeight/2.f);
+        if ( self.subView.translatesAutoresizingMaskIntoConstraints ) {
+            self.frame                = CGRectMake(0.f, 0.f, self.viewWidth, self.viewHeight);
+            self.subView.frame        = CGRectMake(50.f, 0.f, self.viewWidth - 100.f, CGRectGetHeight(self.subView.frame));
+            self.subView.center       = CGPointMake(self.viewWidth/2.f, self.viewHeight/2.f);
+        }else {
+            
+        }
     }
     else
     {
