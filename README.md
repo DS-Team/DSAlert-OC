@@ -19,19 +19,15 @@
 
 ---
 
-## 0、安装和导入示例：
-* 0.1、使用方法1：pod 导入【当前最新版本：1.0.0】：<br> 
-` pod 'DSAlert' ` <br>
-导入头文件：<br>
-`  #import <DSAlert.h> `
-* 0.2、使用方法2：下载demo，把 DSAlert 文件夹拖入项目即可，<br>
+## 0、安装、导入示例和源码地址：
+* 0.1、使用方法2：下载demo，把 DSAlert 文件夹拖入项目即可，<br>
 导入头文件：<br>
 `  #import "DSAlert.h" `<br>
 如果使用 DSActionSheet 需导入头文件：<br>
 `#import "DSActionSheet.h"`
-* 0.3、使用方法3：frameWork ，把demo中的frameWork直接拖入项目即可<br>
+* 0.2、使用方法3：frameWork ，把demo中的frameWork直接拖入项目即可<br>
 `#import <DSAlertFrameWork/DSAlertFrameWork.h>`
-* 0.4、项目源码地址：<br>
+* 0.3、项目源码地址：<br>
  OC版    ：[https://github.com/DS-Team/DSAlert-OC](https://github.com/DS-Team/DSAlert-OC)<br>
  swift 版：[https://github.com/DS-Team/DSAlert-swift](https://github.com/DS-Team/DSAlert-swift)
 

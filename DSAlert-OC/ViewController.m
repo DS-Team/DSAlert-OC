@@ -32,6 +32,7 @@
 #import "ViewController.h"
 #import "Alert6.h"
 #import "UIView+AutoLayout.h"
+#import "VerCodeAlertView.h"
 
 /*! 使用方法一：文件夹拖入 */
 //#import "DSAlert.h"
@@ -421,11 +422,21 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 {
     /*! 5、完全自定义alert */
     DSWeak;
+
+    /*! 纯代码加载方式 */
     self.viewPwdBgView.hidden = NO;
-    [DSAlert ds_showCustomView:_viewPwdBgView configuration:^(DSAlert *tempView) {
+    [DSAlert ds_showCustomView:self.viewPwdBgView configuration:^(DSAlert *tempView) {
         tempView.isTouchEdgeHide = NO;
         weakSelf.alertView5 = tempView;
     }];
+    
+    /*! xib 加载方式 */
+//    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"VerCodeAlertView" owner:self options:nil];
+//    UIView *view1 = nib[0];
+//    [DSAlert ds_showCustomView:view1 configuration:^(DSAlert *tempView) {
+//        tempView.isTouchEdgeHide = NO;
+//        weakSelf.alertView5 = tempView;
+//    }];
 }
 
 - (void)alert6 {
