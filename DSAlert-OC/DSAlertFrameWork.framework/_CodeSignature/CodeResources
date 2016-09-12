@@ -32,6 +32,10 @@
 		<data>
 		gVEavIUCzZaPG13wUSrOt39AGZE=
 		</data>
+		<key>Headers/UIView+AutoLayout.h</key>
+		<data>
+		RgZKn+e92gJyx2aN3qBoUErCM50=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		o9HNEADG5Bn5hI6girfrAO/hfxM=
@@ -118,6 +122,17 @@
 			<key>hash2</key>
 			<data>
 			iMbDbI9C5sETBKuVskgyLV72Vhka+DXlXKQU4L0iZpg=
+			</data>
+		</dict>
+		<key>Headers/UIView+AutoLayout.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RgZKn+e92gJyx2aN3qBoUErCM50=
+			</data>
+			<key>hash2</key>
+			<data>
+			j6IH9YaoFkY+Kn+yK385+TWshoseqIQRZbpXwLNPoXo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -497,7 +497,7 @@
 - (void)ds_showAlertView
 {
     DSWeak;
-    UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [window addSubview:self];
     
     if ( !self.subView.translatesAutoresizingMaskIntoConstraints ) {
