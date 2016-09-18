@@ -74,6 +74,12 @@ typedef void(^ButtonActionBlock)(NSInteger index);
                          imageArray:(NSArray<UIImage *> *)imageArray
                            redIndex:(NSInteger)redIndex
                               title:(NSString *)title
+                      configuration:(void (^)(DSActionSheet *tempView)) configuration
                   ClikckButtonIndex:(ButtonActionBlock)clikckButtonIndex;
+
+/*!
+ *  隐藏 DSActionSheet
+ */
+- (void)ds_dismissDSActionSheet;
 
 @end
