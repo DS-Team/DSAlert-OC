@@ -35,15 +35,15 @@
 #import "VerCodeAlertView.h"
 
 /*! 使用方法一：文件夹拖入 */
-//#import "DSAlert.h"
+#import "DSAlert.h"
 #import "ViewController2.h"
-//#import "DSActionSheet.h"
+#import "DSActionSheet.h"
 
 ///*! 使用方法二：pod */
 //#import <DSAlert.h>
 //
 ///*! 使用方法三：frameWork */
-#import <DSAlertFrameWork/DSAlertFrameWork.h>
+//#import <DSAlertFrameWork/DSAlertFrameWork.h>
 
 
 static NSString * const titleMsg1 = @"欢迎使用 iPhone SE，迄今最高性能的 4 英寸 iPhone。在打造这款手机时，我们在深得人心的 4 英寸设计基础上，从里到外重新构想。它所采用的 A9 芯片，正是在 iPhone 6s 上使用的先进芯片。1200 万像素的摄像头能拍出令人叹为观止的精彩照片和 4K 视频，而 Live Photos 则会让你的照片栩栩如生。这一切，成就了一款外形小巧却异常强大的 iPhone。";
@@ -52,19 +52,24 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 @interface ViewController ()
 @property (weak, nonatomic  ) IBOutlet UITableView  *tableView;
 
-@property (nonatomic, strong) DSAlert      *alertView1;
-@property (nonatomic, strong) DSAlert      *alertView2;
-@property (nonatomic, strong) DSAlert      *alertView3;
-@property (nonatomic, strong) DSAlert      *alertView4;
-@property (nonatomic, strong) DSAlert      *alertView5;
+@property (nonatomic, strong) DSAlert        *alertView1;
+@property (nonatomic, strong) DSAlert        *alertView2;
+@property (nonatomic, strong) DSAlert        *alertView3;
+@property (nonatomic, strong) DSAlert        *alertView4;
+@property (nonatomic, strong) DSAlert        *alertView5;
 
-@property (nonatomic, strong) UIView       *viewPwdBgView;
-@property (nonatomic, strong) UITextField  *pwdTextField;
+@property (nonatomic, strong) DSActionSheet  *actionSheet1;
+@property (nonatomic, strong) DSActionSheet  *actionSheet2;
+@property (nonatomic, strong) DSActionSheet  *actionSheet3;
 
-@property (nonatomic,strong ) UIButton     *chooseBtn;
-@property (nonatomic,strong ) UILabel      *titleLabel;
 
-@property (strong, nonatomic) NSArray      *dataArray;
+@property (nonatomic, strong) UIView         *viewPwdBgView;
+@property (nonatomic, strong) UITextField    *pwdTextField;
+
+@property (nonatomic,strong ) UIButton       *chooseBtn;
+@property (nonatomic,strong ) UILabel        *titleLabel;
+
+@property (strong, nonatomic) NSArray        *dataArray;
 
 @end
 
@@ -131,6 +136,7 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    DSWeak;
     if ( 0 == indexPath.section )
     {
         [self showAlertAction:indexPath.row + 1];
@@ -144,9 +150,13 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                                                 imageArray:nil
                                                   redIndex:1
                                                      title:nil
-                                         ClikckButtonIndex:^(NSInteger index) {
-                                             NSLog(@"你点击了第 %ld 行！",(long)index);
-                                         }];
+                                             configuration:^(DSActionSheet *tempView) {
+                                                 weakSelf.actionSheet1 = tempView;
+                 } ClikckButtonIndex:^(NSInteger index) {
+                     NSLog(@"你点击了第 %ld 行！",(long)index);
+                     [weakSelf.actionSheet1 ds_dismissDSActionSheet];
+                 }];
+                 
             }
                 break;
             case 1:
@@ -156,9 +166,12 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                                                 imageArray:nil
                                                   redIndex:1
                                                      title:@"测试带标题的ActionSheet"
-                                         ClikckButtonIndex:^(NSInteger index) {
-                                             NSLog(@"你点击了第 %ld 行！",(long)index);
-                                         }];
+                                             configuration:^(DSActionSheet *tempView) {
+                                                 weakSelf.actionSheet1 = tempView;
+                                             } ClikckButtonIndex:^(NSInteger index) {
+                                                 NSLog(@"你点击了第 %ld 行！",(long)index);
+                                                 [weakSelf.actionSheet1 ds_dismissDSActionSheet];
+                                             }];
             }
                 break;
             case 2:
@@ -168,9 +181,12 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                                                 imageArray:@[[UIImage imageNamed:@"123.png"],[UIImage imageNamed:@"背景.jpg"],[UIImage imageNamed:@"美女.jpg"]]
                                                   redIndex:1
                                                      title:@"测试带标题和图片的ActionSheet"
-                                         ClikckButtonIndex:^(NSInteger index) {
-                                             NSLog(@"你点击了第 %ld 行！",(long)index);
-                                         }];
+                                             configuration:^(DSActionSheet *tempView) {
+                                                 weakSelf.actionSheet1 = tempView;
+                                             } ClikckButtonIndex:^(NSInteger index) {
+                                                 NSLog(@"你点击了第 %ld 行！",(long)index);
+                                                 [weakSelf.actionSheet1 ds_dismissDSActionSheet];
+                                             }];
             }
                 break;
             default:
@@ -536,44 +552,44 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
         [_viewPwdBgView addSubview:lineView3];
         [_viewPwdBgView addSubview:sureButton];
         
-        //这里是让titleLabel跟父view上左右边距为0,底部间距不设置
-        [titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeBottom];
-        //设置titleLabel的高度为buttonHeight
-        [titleLabel autoSetDimension:ALDimensionHeight toSize:buttonHeight];
-        
-        //设置lineView1与父view左右间距为0,顶部和titleLabel的底部间距为0,高度为1
-        [lineView1 autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
-        [lineView1 autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
-        [lineView1 autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:titleLabel];
-        [lineView1 autoSetDimension:ALDimensionHeight toSize:1.0];
-        
-        //设置_pwdTextField与父view左右间距为20,顶部和lineView1的底部间距为20,高度为buttonHeight
-        [_pwdTextField autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView withOffset:20];
-        [_pwdTextField autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView withOffset:-20];
-        [_pwdTextField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:lineView1 withOffset:20];
-        [_pwdTextField autoSetDimension:ALDimensionHeight toSize:buttonHeight];
-        
-        //这里是让lineView2跟父view上左右边距为0,顶部间距不设置,底部跟父view间距41,高度为buttonHeight
-        [lineView2 autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 41.0, 0) excludingEdge:ALEdgeTop];
-        [lineView2 autoSetDimension:ALDimensionHeight toSize:1.0];
-        
-        //设置cancleButton与父view左底间距为0,高度为buttonHeight,宽度为buttonWith
-        [cancleButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
-        [cancleButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
-        [cancleButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
-        
-        //设置lineView3与父view底间距为0,高度为buttonHeight,左边与cancelButton的右间距为0,宽度为1
-        [lineView3 autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:cancleButton];
-        [lineView3 autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
-        [lineView3 autoSetDimension:ALDimensionHeight toSize:buttonHeight];
-        [lineView3 autoSetDimension:ALDimensionWidth toSize:1];
-        
-        //设置sureButton与父view底右间距为0,高度为buttonHeight,左边与cancelButton的右间距为0
-        [sureButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:lineView3];
-        [sureButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
-        [sureButton autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
-        [sureButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
-        [sureButton autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:cancleButton];
+//        //这里是让titleLabel跟父view上左右边距为0,底部间距不设置
+//        [titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeBottom];
+//        //设置titleLabel的高度为buttonHeight
+//        [titleLabel autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+//        
+//        //设置lineView1与父view左右间距为0,顶部和titleLabel的底部间距为0,高度为1
+//        [lineView1 autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
+//        [lineView1 autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
+//        [lineView1 autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:titleLabel];
+//        [lineView1 autoSetDimension:ALDimensionHeight toSize:1.0];
+//        
+//        //设置_pwdTextField与父view左右间距为20,顶部和lineView1的底部间距为20,高度为buttonHeight
+//        [_pwdTextField autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView withOffset:20];
+//        [_pwdTextField autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView withOffset:-20];
+//        [_pwdTextField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:lineView1 withOffset:20];
+//        [_pwdTextField autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+//        
+//        //这里是让lineView2跟父view上左右边距为0,顶部间距不设置,底部跟父view间距41,高度为buttonHeight
+//        [lineView2 autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 41.0, 0) excludingEdge:ALEdgeTop];
+//        [lineView2 autoSetDimension:ALDimensionHeight toSize:1.0];
+//        
+//        //设置cancleButton与父view左底间距为0,高度为buttonHeight,宽度为buttonWith
+//        [cancleButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:_viewPwdBgView];
+//        [cancleButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+//        [cancleButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+//        
+//        //设置lineView3与父view底间距为0,高度为buttonHeight,左边与cancelButton的右间距为0,宽度为1
+//        [lineView3 autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:cancleButton];
+//        [lineView3 autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+//        [lineView3 autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+//        [lineView3 autoSetDimension:ALDimensionWidth toSize:1];
+//        
+//        //设置sureButton与父view底右间距为0,高度为buttonHeight,左边与cancelButton的右间距为0
+//        [sureButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:lineView3];
+//        [sureButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_viewPwdBgView];
+//        [sureButton autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:_viewPwdBgView];
+//        [sureButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
+//        [sureButton autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:cancleButton];
         
     }
     return _viewPwdBgView;

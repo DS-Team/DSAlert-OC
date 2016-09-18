@@ -80,6 +80,7 @@
                          imageArray:(NSArray<UIImage *> *)imageArray
                            redIndex:(NSInteger)redIndex
                               title:(NSString *)title
+                      configuration:(void (^)(DSActionSheet *tempView)) configuration
                   ClikckButtonIndex:(ButtonActionBlock)clikckButtonIndex
 {
     DSActionSheet *actionSheet       = [self shareActionSheet];
@@ -89,6 +90,10 @@
     actionSheet.imageArray           = imageArray;
     actionSheet.specialIndex         = redIndex;
     actionSheet.title                = title;
+    if (configuration)
+    {
+        configuration(actionSheet);
+    }
     [actionSheet.tableView reloadData];
     [actionSheet show];
 }
@@ -239,7 +244,7 @@
     [self fadeIn];
 }
 
-- (void)dismiss
+- (void)ds_dismissDSActionSheet
 {
     NSLog(@"【 DSActionSheet 】你触摸了背景隐藏！");
     [self fadeOut];
@@ -268,7 +273,7 @@
     {
         _overlayControl                 = [[UIControl alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         _overlayControl.backgroundColor = [UIColor colorWithRed:.16 green:.17 blue:.21 alpha:.5];
-        [_overlayControl addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+        [_overlayControl addTarget:self action:@selector(ds_dismissDSActionSheet) forControlEvents:UIControlEventTouchUpInside];
         _overlayControl.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
     }
     return _overlayControl;

@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char DSAlertFrameWorkVersionString[];
 
 #import <DSAlertFrameWork/DSAlert.h>
 #import <DSAlertFrameWork/DSActionSheet.h>
+#import <DSAlertFrameWork/UIView+AutoLayout.h>
 #import <Accelerate/Accelerate.h>
