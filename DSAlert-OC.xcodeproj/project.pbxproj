@@ -355,8 +355,9 @@
 					"$(PROJECT_DIR)/DSAlert-OC",
 				);
 				INFOPLIST_FILE = "DSAlert-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DS-Team.DSAlert-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -373,8 +374,9 @@
 					"$(PROJECT_DIR)/DSAlert-OC",
 				);
 				INFOPLIST_FILE = "DSAlert-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ds.DSAlert-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DS-Team.DSAlert-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

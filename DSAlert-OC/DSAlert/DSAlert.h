@@ -62,8 +62,8 @@ typedef NS_ENUM(NSUInteger, DSAlertAnimatingStyle) {
 /*! 背景颜色 默认：半透明*/
 @property (nonatomic, strong) UIColor   *bgColor;
 
-/*! 按钮字体颜色 默认：白色*/
-@property (nonatomic, strong) UIColor   *buttonTitleColor;
+///*! 按钮字体颜色 默认：白色*/
+//@property (nonatomic, strong) UIColor   *buttonTitleColor;
 
 /*! 是否开启边缘触摸隐藏 alert 默认：NO */
 @property (nonatomic, assign) BOOL       isTouchEdgeHide;
@@ -108,6 +108,7 @@ typedef NS_ENUM(NSUInteger, DSAlertAnimatingStyle) {
  *  @param message       消息内容：可空
  *  @param image         图片：可空
  *  @param buttonTitles  按钮标题：不可空
+ *  @param buttonTitles  按钮标题颜色：可空，默认蓝色
  *  @param configuration 属性配置：如 bgColor、buttonTitleColor、isTouchEdgeHide...
  *  @param action        按钮的点击事件处理
  */
@@ -115,6 +116,7 @@ typedef NS_ENUM(NSUInteger, DSAlertAnimatingStyle) {
                       message:(NSString *)message
                         image:(UIImage *)image
                  buttonTitles:(NSArray *)buttonTitles
+            buttonTitlesColor:(NSArray <UIColor *>*)buttonTitlesColor
                 configuration:(void (^)(DSAlert *tempView)) configuration
                   actionClick:(void (^)(NSInteger index)) action;
 
@@ -132,13 +134,14 @@ typedef NS_ENUM(NSUInteger, DSAlertAnimatingStyle) {
  *  @param message      message
  *  @param image        image
  *  @param buttonTitles 按钮的标题
- *
+ *  @param buttonTitles  按钮标题颜色：可空，默认蓝色
  *  @return 创建一个类似系统的警告框
  */
 - (instancetype)ds_showTitle:(NSString *)title
                      message:(NSString *)message
                        image:(UIImage *)image
-                buttonTitles:(NSArray *)buttonTitles;
+                buttonTitles:(NSArray *)buttonTitles
+           buttonTitlesColor:(NSArray <UIColor *>*)buttonTitlesColor;
 
 /*!
  *  视图显示
