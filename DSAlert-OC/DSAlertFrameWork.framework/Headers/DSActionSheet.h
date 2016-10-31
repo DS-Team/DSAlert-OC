@@ -76,4 +76,9 @@ typedef void(^ButtonActionBlock)(NSInteger index);
                               title:(NSString *)title
                   ClikckButtonIndex:(ButtonActionBlock)clikckButtonIndex;
 
+
+/*!
+ *  隐藏 DSActionSheet
+ */
+- (void)ds_dismissDSActionSheet;
 @end

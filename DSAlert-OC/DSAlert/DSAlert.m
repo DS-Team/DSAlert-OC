@@ -251,6 +251,7 @@
 @property (copy, nonatomic, readonly) NSString                *message;
 @property (copy, nonatomic, readonly) UIImage                 *image;
 @property (copy, nonatomic, readonly) NSArray                 *buttonTitles;
+@property (copy, nonatomic, readonly) NSArray                 *buttonTitlesColor;
 
 @property (strong, nonatomic        ) UIImageView             *containerView;
 @property (strong, nonatomic        ) UIScrollView            *scrollView;
@@ -296,16 +297,18 @@
                      message:(NSString *)message
                        image:(UIImage *)image
                 buttonTitles:(NSArray *)buttonTitles
+           buttonTitlesColor:(NSArray <UIColor *>*)buttonTitlesColor
 {
     self.viewWidth    = SCREENWIDTH;
     self.viewHeight   = SCREENHEIGHT;
     
     if (self == [super initWithFrame:CGRectMake(0, 0, kDSAlertWidth, 0)])
     {
-        _title        = [title copy];
-        _image        = image;
-        _message      = [message copy];
-        _buttonTitles = [NSArray arrayWithArray:buttonTitles];
+        _title             = [title copy];
+        _image             = image;
+        _message           = [message copy];
+        _buttonTitles      = [NSArray arrayWithArray:buttonTitles];
+        _buttonTitlesColor = [NSArray arrayWithArray:buttonTitlesColor];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeFrames:) name:UIDeviceOrientationDidChangeNotification object:nil];
         
@@ -421,10 +424,10 @@
     return _blurImageView;
 }
 
-- (void)setButtonTitleColor:(UIColor *)buttonTitleColor
-{
-    _buttonTitleColor = buttonTitleColor;
-}
+//- (void)setButtonTitleColor:(UIColor *)buttonTitleColor
+//{
+//    _buttonTitleColor = buttonTitleColor;
+//}
 
 - (void)setBgImageName:(NSString *)bgImageName
 {
@@ -766,44 +769,60 @@
     CGFloat buttonWidth  = kDSAlertWidth;
     CGFloat top          = CGRectGetHeight(_containerView.frame)-_buttonsHeight;
     [self addLine:CGRectMake(0, top-0.5, buttonWidth, 0.5) toView:_containerView];
-    if (1 == _buttonTitles.count)
+    
+    DSWeak;
+    if (_buttonTitlesColor.count)
     {
-        [self addButton:CGRectMake(0, top, buttonWidth, buttonHeight) title:[_buttonTitles firstObject] tag:0];
-    }
-    else if (2 == _buttonTitles.count)
-    {
-        [self addButton:CGRectMake(0, top, buttonWidth/2, buttonHeight) title:[_buttonTitles firstObject] tag:0];
-        [self addButton:CGRectMake(0+buttonWidth/2, top, buttonWidth/2, buttonHeight) title:[_buttonTitles lastObject] tag:1];
-        [self addLine:CGRectMake(0+buttonWidth/2-.5, top, 0.5, buttonHeight) toView:_containerView];
-    }
-    else
-    {
-        for (NSInteger i=0; i<_buttonTitles.count; i++)
+//        [_buttonTitlesColor enumerateObjectsUsingBlock:^(UIColor *titleColor, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        for (NSUInteger j = 0; j < _buttonTitlesColor.count; j++)
         {
-            [self addButton:CGRectMake(0, top, buttonWidth, buttonHeight) title:_buttonTitles[i] tag:i];
-            top += buttonHeight;
-            if (_buttonTitles.count-1!=i)
+            if (1 == _buttonTitles.count)
             {
-                [self addLine:CGRectMake(0, top, buttonWidth, 0.5) toView:_containerView];
+                [self addButton:CGRectMake(0, top, buttonWidth, buttonHeight) title:[_buttonTitles firstObject] tag:0  titleColor:_buttonTitlesColor[0]];
             }
+            else if (2 == _buttonTitles.count)
+            {
+                [self addButton:CGRectMake(0, top, buttonWidth/2, buttonHeight) title:[_buttonTitles firstObject] tag:0 titleColor:_buttonTitlesColor[0]];
+                [self addButton:CGRectMake(0+buttonWidth/2, top, buttonWidth/2, buttonHeight) title:[_buttonTitles lastObject] tag:1 titleColor:_buttonTitlesColor[1]];
+                [self addLine:CGRectMake(0+buttonWidth/2-.5, top, 0.5, buttonHeight) toView:_containerView];
+            }
+            else
+            {
+                for (NSInteger i=0; i<_buttonTitles.count; i++)
+                {
+                    [self addButton:CGRectMake(0, top, buttonWidth, buttonHeight) title:_buttonTitles[i] tag:i titleColor:_buttonTitlesColor[i]];
+                    top += buttonHeight;
+                    if (_buttonTitles.count-1!=i)
+                    {
+                        [self addLine:CGRectMake(0, top, buttonWidth, 0.5) toView:_containerView];
+                    }
+                }
+                [_lines enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    [_containerView bringSubviewToFront:obj];
+                }];
+            }
+
         }
-        [_lines enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            [_containerView bringSubviewToFront:obj];
-        }];
+        
+        
+            
+//        }];
     }
+    
 }
 
 #pragma mark - 添加按钮方法
-- (void)addButton:(CGRect)frame title:(NSString *)title tag:(NSInteger)tag
+- (void)addButton:(CGRect)frame title:(NSString *)title tag:(NSInteger)tag titleColor:(UIColor *)titleColor
 {
     UIButton *button       = [[UIButton alloc] initWithFrame:frame];
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     button.tag             = tag;
     
-    if (_buttonTitleColor)
+    if (titleColor)
     {
-        [button setTitleColor:_buttonTitleColor forState:UIControlStateNormal];
+        [button setTitleColor:titleColor forState:UIControlStateNormal];
     }
     else
     {
@@ -973,10 +992,15 @@
                       message:(NSString *)message
                         image:(UIImage *)image
                  buttonTitles:(NSArray *)buttonTitles
+            buttonTitlesColor:(NSArray <UIColor *>*)buttonTitlesColor
                 configuration:(void (^)(DSAlert *tempView)) configuration
                   actionClick:(void (^)(NSInteger index)) action
 {
-    DSAlert *temp = [[DSAlert alloc] ds_showTitle:title message:message image:image buttonTitles:buttonTitles];
+    DSAlert *temp = [[DSAlert alloc] ds_showTitle:title
+                                          message:message
+                                            image:image
+                                     buttonTitles:buttonTitles
+                                buttonTitlesColor:buttonTitlesColor];
     if (configuration)
     {
         configuration(temp);

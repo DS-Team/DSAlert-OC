@@ -33,10 +33,10 @@
 #import "Alert6.h"
 #import "UIView+AutoLayout.h"
 #import "VerCodeAlertView.h"
+#import "ViewController2.h"
 
 /*! 使用方法一：文件夹拖入 */
 #import "DSAlert.h"
-#import "ViewController2.h"
 #import "DSActionSheet.h"
 
 ///*! 使用方法二：pod */
@@ -89,7 +89,7 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                       @[@"1、actionsheet",
                         @"2、actionsheet带标题",
                         @"3、actionsheet带标题带图片"],
-                      @[@"DSAlert特点：\n1、手势触摸隐藏开关，可随时开关\n2、可以自定义背景图片、背景颜色、按钮颜色\n3、可以添加文字和图片，且可以滑动查看！\n4、横竖屏适配完美\n5、有各种炫酷动画展示你的alert\n6、理论完全兼容现有所有 iOS 系统版本"
+                      @[@"DSAlert特点：\n1、手势触摸隐藏开关，可随时开关\n2、可以自定义背景图片、背景颜色、按钮颜色\n3、可以添加文字和图片，且可以滑动查看！\n4、横竖屏适配完美\n5、有各种炫酷动画展示你的alert\n6、可以自定义按钮颜色\n7、理论完全兼容现有所有 iOS 系统版本"
                         ], nil];
     }
     return _dataArray;
@@ -225,6 +225,11 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
     return (0 == section) ? 40 : 20;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return FLT_MIN;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -262,7 +267,7 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 {
     DSWeak;
     /*! 第一种封装使用示例 */
-    [DSAlert ds_showAlertWithTitle:@"温馨提示：" message:titleMsg1 image:nil buttonTitles:@[@"取消",@"确定"] configuration:^(DSAlert *temp) {
+    [DSAlert ds_showAlertWithTitle:@"温馨提示：" message:titleMsg1 image:nil buttonTitles:@[@"取消",@"确定",@"确定2",@"确定3"] buttonTitlesColor:@[[UIColor redColor], [UIColor greenColor], [UIColor grayColor], [UIColor purpleColor]] configuration:^(DSAlert *temp) {
         
         //        temp.bgColor       = [UIColor colorWithRed:0 green:1.0 blue:0 alpha:0.3];
         /*! 开启边缘触摸隐藏alertView */
@@ -330,9 +335,9 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
     _alertView2                  = [[DSAlert alloc] ds_showTitle:@"温馨提示："
                                                          message:titleMsg2
                                                            image:nil
-                                                    buttonTitles:@[@"取消", @"跳转VC2"]];
+                                                    buttonTitles:@[@"取消", @"跳转VC2"] buttonTitlesColor:@[[UIColor redColor], [UIColor greenColor]]];
     /*! 自定义按钮文字颜色 */
-    _alertView2.buttonTitleColor = [UIColor orangeColor];
+//    _alertView2.buttonTitleColor = [UIColor orangeColor];
     _alertView2.bgColor = [UIColor colorWithRed:1.0 green:1.0 blue:0 alpha:0.3];
     
     /*! 是否开启进出场动画 默认：NO，如果 YES ，并且同步设置进出场动画枚举为默认值：1 */
@@ -366,9 +371,9 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
     _alertView3                  = [[DSAlert alloc] ds_showTitle:@"温馨提示："
                                                          message:titleMsg1
                                                            image:nil
-                                                    buttonTitles:@[@"取消", @"确定"]];
+                                                    buttonTitles:@[@"取消", @"确定"]buttonTitlesColor:@[[UIColor redColor], [UIColor greenColor]]];
     /*! 自定义按钮文字颜色 */
-    _alertView3.buttonTitleColor = [UIColor orangeColor];
+//    _alertView3.buttonTitleColor = [UIColor orangeColor];
     /*! 自定义alert的背景图片 */
     _alertView3.bgImageName      = @"背景.jpg";
     /*! 开启动画，并且设置动画样式，默认：1 */
@@ -405,9 +410,9 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
     _alertView4                  = [[DSAlert alloc] ds_showTitle:@"温馨提示："
                                                          message:titleMsg1
                                                            image:[UIImage imageNamed:@"美女.jpg"]
-                                                    buttonTitles:@[@"取消", @"跳转VC2"]];
+                                                    buttonTitles:@[@"取消", @"跳转VC2"] buttonTitlesColor:@[[UIColor redColor], [UIColor greenColor]]];
     /*! 自定义按钮文字颜色 */
-    _alertView4.buttonTitleColor = [UIColor orangeColor];
+//    _alertView4.buttonTitleColor = [UIColor orangeColor];
     /*! 自定义alert的背景图片 */
     _alertView4.bgImageName      = @"背景.jpg";
     /*! 是否显示动画效果 */
@@ -615,7 +620,7 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
         if (_pwdTextField.text.length < 4 || _pwdTextField.text.length > 8 )
         {
             self.pwdTextField.text = @"";
-            [DSAlert ds_showAlertWithTitle:@"温馨提示：" message:@"请输入正确的密码！" image:nil buttonTitles:@[@"确定"] configuration:^(DSAlert *tempView) {
+            [DSAlert ds_showAlertWithTitle:@"温馨提示：" message:@"请输入正确的密码！" image:nil buttonTitles:@[@"确定"] buttonTitlesColor:@[[UIColor redColor], [UIColor cyanColor]] configuration:^(DSAlert *tempView) {
                 //                weakSelf.alert2 = tempView;
             } actionClick:^(NSInteger index) {
                 if (1 == index)
