@@ -442,20 +442,29 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 - (void)alert5
 {
     /*! 5、完全自定义alert */
-    DSWeak;
 
-    /*! 纯代码加载方式 */
-    self.viewPwdBgView.hidden = NO;
+    /*! 纯代码加载方式  【建议用 xib 方式】*/
+    /*! 用纯代码的时候，记得这里的自定义 View 不能用懒加载，要不然点击第二次就不会在出现那个自定义 View 了 */
+    [self setViewPwdBgView];
+//    self.viewPwdBgView.hidden = NO;
+//    _alertView5                  = [[DSAlert alloc] initWithCustomView:self.viewPwdBgView];
+//    _alertView5.isTouchEdgeHide = YES;
+//    _alertView5.showAnimate = YES;
+//    [_alertView5 ds_showAlertView];
+    
+    DSWeak;
     [DSAlert ds_showCustomView:self.viewPwdBgView configuration:^(DSAlert *tempView) {
-        tempView.isTouchEdgeHide = NO;
+        tempView.isTouchEdgeHide = YES;
+        tempView.animatingStyle = DSAlertAnimatingStyleScale;
         weakSelf.alertView5 = tempView;
     }];
     
-    /*! xib 加载方式 */
+    /*! xib 加载方式 【建议用 xib 方式】*/
 //    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"VerCodeAlertView" owner:self options:nil];
 //    UIView *view1 = nib[0];
 //    [DSAlert ds_showCustomView:view1 configuration:^(DSAlert *tempView) {
-//        tempView.isTouchEdgeHide = NO;
+//        tempView.isTouchEdgeHide = YES;
+//        tempView.animatingStyle = DSAlertAnimatingStyleScale;
 //        weakSelf.alertView5 = tempView;
 //    }];
 }
@@ -489,10 +498,10 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
     return false;
 }
 
-- (UIView *)viewPwdBgView
+- (void)setViewPwdBgView
 {
-    if (!_viewPwdBgView)
-    {
+//    if (!_viewPwdBgView)
+//    {
         _viewPwdBgView                         = [UIView new];
         _viewPwdBgView.frame                   = CGRectMake(30, 100, SCREENWIDTH - 60, 160);
         
@@ -596,20 +605,19 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
 //        [sureButton autoSetDimension:ALDimensionHeight toSize:buttonHeight];
 //        [sureButton autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:cancleButton];
         
-    }
-    return _viewPwdBgView;
+//    }
+//    return _viewPwdBgView;
 }
 
 - (void)cancleButtonAction:(UIButton *)sender
 {
-    
     if (sender.tag == 1)
     {
         NSLog(@"点击了取消按钮！");
         /*! 隐藏alert */
         [_alertView5 ds_dismissAlertView];
         [_pwdTextField resignFirstResponder];
-        
+
         [self.navigationController popViewControllerAnimated:YES];
     }
     else
