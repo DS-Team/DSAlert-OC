@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
     s.authors      = { 'DS-Team' => '513878863@qq.com' }
     s.platform     = :ios, '7.0'
     s.source       = { :git => 'https://github.com/DS-Team/DSAlert-OC.git', :tag => s.version.to_s }
-    s.source_files = 'DSAlert-OC/**/*.{h,m}'
+    s.source_files = 'DSAlert-OC/DSAlert/*.{h,m}'
     s.requires_arc = true
 end
