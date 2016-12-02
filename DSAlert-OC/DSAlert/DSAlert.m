@@ -772,8 +772,6 @@
     
     if (_buttonTitlesColor.count)
     {
-//        [_buttonTitlesColor enumerateObjectsUsingBlock:^(UIColor *titleColor, NSUInteger idx, BOOL * _Nonnull stop) {
-        
         for (NSUInteger j = 0; j < _buttonTitlesColor.count; j++)
         {
             if (1 == _buttonTitles.count)
@@ -803,10 +801,6 @@
             }
 
         }
-        
-        
-            
-//        }];
     }
     
 }
