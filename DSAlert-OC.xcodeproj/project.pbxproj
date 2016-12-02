@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		610557B21D81A3BD006B47A4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */; };
 		613B1C9E1D81592900625FFF /* Alert6.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B1C9D1D81592900625FFF /* Alert6.m */; };
 		613B1CA01D81593300625FFF /* Alert6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B1C9F1D81593300625FFF /* Alert6.xib */; };
 		61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */; };
@@ -28,11 +27,10 @@
 		C4EA7C501D7AD26100D790CA /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4D1D7AD26000D790CA /* 123.png */; };
 		C4EA7C511D7AD26100D790CA /* 背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4E1D7AD26100D790CA /* 背景.jpg */; };
 		C4EA7C521D7AD26100D790CA /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4F1D7AD26100D790CA /* 美女.jpg */; };
+		C4EEBCD51DF10DA20061F6D7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		610557B01D81A3BD006B47A4 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "../UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "../UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		613B1C9C1D81592900625FFF /* Alert6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert6.h; sourceTree = "<group>"; };
 		613B1C9D1D81592900625FFF /* Alert6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert6.m; sourceTree = "<group>"; };
 		613B1C9F1D81593300625FFF /* Alert6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alert6.xib; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		C4EA7C4D1D7AD26000D790CA /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		C4EA7C4E1D7AD26100D790CA /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景.jpg"; sourceTree = "<group>"; };
 		C4EA7C4F1D7AD26100D790CA /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女.jpg"; sourceTree = "<group>"; };
+		C4EEBCD31DF10DA20061F6D7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +147,12 @@
 		C4EA7C3E1D7AD1D400D790CA /* DSAlert */ = {
 			isa = PBXGroup;
 			children = (
-				610557B01D81A3BD006B47A4 /* UIView+AutoLayout.h */,
-				610557B11D81A3BD006B47A4 /* UIView+AutoLayout.m */,
 				C4EA7C3F1D7AD1D400D790CA /* CALayer+Animation.h */,
 				C4EA7C401D7AD1D400D790CA /* CALayer+Animation.m */,
 				C4EA7C411D7AD1D400D790CA /* DSAlert.h */,
 				C4EA7C421D7AD1D400D790CA /* DSAlert.m */,
+				C4EEBCD31DF10DA20061F6D7 /* UIView+AutoLayout.h */,
+				C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */,
 			);
 			path = DSAlert;
 			sourceTree = "<group>";
@@ -239,10 +239,10 @@
 				C4EA7C471D7AD1D400D790CA /* DSAlert.m in Sources */,
 				C4EA7C441D7AD1D400D790CA /* DSTableCell.m in Sources */,
 				C4EA7C431D7AD1D400D790CA /* DSActionSheet.m in Sources */,
-				610557B21D81A3BD006B47A4 /* UIView+AutoLayout.m in Sources */,
 				C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */,
 				C4EA7C4B1D7AD1EE00D790CA /* ViewController2.m in Sources */,
 				C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */,
+				C4EEBCD51DF10DA20061F6D7 /* UIView+AutoLayout.m in Sources */,
 				C4EA7C231D7AD19D00D790CA /* main.m in Sources */,
 				C474C7641D82A55D00D5637F /* VerCodeAlertView.m in Sources */,
 			);
