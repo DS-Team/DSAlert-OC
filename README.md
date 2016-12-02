@@ -5,7 +5,8 @@
 
 ## 更新提示：【倒叙更新】
 
-#### version 1.0.0 
+#### version 1.0.1
+* 12、终于可以愉快的 pod 导入了，pod 导入：` pod 'DSAlert-OC' ` 【最新版本：1.0.1】
 * 11、可以自定义每个按钮的字体颜色了！
 * 10、再次设计结构，新增frameWork静态库文件封装，喜欢简洁的你可以直接导入frameWork即可！
 * 9、多种炫酷入场、退出动画，让你的APP各种叼！
@@ -21,14 +22,15 @@
 ---
 
 ## 0、安装、导入示例和源码地址：
-* 0.1、使用方法2：下载demo，把 DSAlert 文件夹拖入项目即可，<br>
+* 0.1、pod 导入：` pod 'DSAlert-OC' ` 【最新版本：1.0.1】
+* 0.2、使用方法2：下载demo，把 DSAlert 文件夹拖入项目即可，<br>
 导入头文件：<br>
 `  #import "DSAlert.h" `<br>
 如果使用 DSActionSheet 需导入头文件：<br>
 `#import "DSActionSheet.h"`
-* 0.2、使用方法3：frameWork ，把demo中的frameWork直接拖入项目即可<br>
+* 0.3、使用方法3：frameWork ，把demo中的frameWork直接拖入项目即可<br>
 `#import <DSAlertFrameWork/DSAlertFrameWork.h>`
-* 0.3、项目源码地址：<br>
+* 0.4、项目源码地址：<br>
  OC版    ：[https://github.com/DS-Team/DSAlert-OC](https://github.com/DS-Team/DSAlert-OC)<br>
  swift 版：[https://github.com/DS-Team/DSAlert-swift](https://github.com/DS-Team/DSAlert-swift)
 
