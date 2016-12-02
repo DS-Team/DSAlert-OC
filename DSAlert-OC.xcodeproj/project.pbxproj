@@ -17,17 +17,17 @@
 		C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C281D7AD19D00D790CA /* ViewController.m */; };
 		C4EA7C2E1D7AD19D00D790CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C2D1D7AD19D00D790CA /* Assets.xcassets */; };
 		C4EA7C311D7AD19D00D790CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C2F1D7AD19D00D790CA /* LaunchScreen.storyboard */; };
-		C4EA7C431D7AD1D400D790CA /* DSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C3A1D7AD1D400D790CA /* DSActionSheet.m */; };
-		C4EA7C441D7AD1D400D790CA /* DSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C3C1D7AD1D400D790CA /* DSTableCell.m */; };
-		C4EA7C451D7AD1D400D790CA /* DSTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C3D1D7AD1D400D790CA /* DSTableCell.xib */; };
-		C4EA7C461D7AD1D400D790CA /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C401D7AD1D400D790CA /* CALayer+Animation.m */; };
-		C4EA7C471D7AD1D400D790CA /* DSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C421D7AD1D400D790CA /* DSAlert.m */; };
 		C4EA7C4B1D7AD1EE00D790CA /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C491D7AD1EE00D790CA /* ViewController2.m */; };
 		C4EA7C4C1D7AD1EE00D790CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4A1D7AD1EE00D790CA /* Main.storyboard */; };
 		C4EA7C501D7AD26100D790CA /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4D1D7AD26000D790CA /* 123.png */; };
 		C4EA7C511D7AD26100D790CA /* 背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4E1D7AD26100D790CA /* 背景.jpg */; };
 		C4EA7C521D7AD26100D790CA /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4F1D7AD26100D790CA /* 美女.jpg */; };
-		C4EEBCD51DF10DA20061F6D7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */; };
+		C4EEBCF41DF1159A0061F6D7 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */; };
+		C4EEBCF51DF1159A0061F6D7 /* DSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */; };
+		C4EEBCF61DF1159A0061F6D7 /* DSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */; };
+		C4EEBCF71DF1159A0061F6D7 /* DSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */; };
+		C4EEBCF81DF1159A0061F6D7 /* DSTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */; };
+		C4EEBCF91DF1159A0061F6D7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,23 +47,23 @@
 		C4EA7C2D1D7AD19D00D790CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4EA7C301D7AD19D00D790CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4EA7C321D7AD19D00D790CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4EA7C391D7AD1D400D790CA /* DSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActionSheet.h; sourceTree = "<group>"; };
-		C4EA7C3A1D7AD1D400D790CA /* DSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActionSheet.m; sourceTree = "<group>"; };
-		C4EA7C3B1D7AD1D400D790CA /* DSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTableCell.h; sourceTree = "<group>"; };
-		C4EA7C3C1D7AD1D400D790CA /* DSTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTableCell.m; sourceTree = "<group>"; };
-		C4EA7C3D1D7AD1D400D790CA /* DSTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSTableCell.xib; sourceTree = "<group>"; };
-		C4EA7C3F1D7AD1D400D790CA /* CALayer+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Animation.h"; sourceTree = "<group>"; };
-		C4EA7C401D7AD1D400D790CA /* CALayer+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Animation.m"; sourceTree = "<group>"; };
-		C4EA7C411D7AD1D400D790CA /* DSAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAlert.h; sourceTree = "<group>"; };
-		C4EA7C421D7AD1D400D790CA /* DSAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAlert.m; sourceTree = "<group>"; };
 		C4EA7C481D7AD1EE00D790CA /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		C4EA7C491D7AD1EE00D790CA /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		C4EA7C4A1D7AD1EE00D790CA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C4EA7C4D1D7AD26000D790CA /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		C4EA7C4E1D7AD26100D790CA /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景.jpg"; sourceTree = "<group>"; };
 		C4EA7C4F1D7AD26100D790CA /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女.jpg"; sourceTree = "<group>"; };
-		C4EEBCD31DF10DA20061F6D7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		C4EEBCE91DF1159A0061F6D7 /* CALayer+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Animation.h"; sourceTree = "<group>"; };
+		C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Animation.m"; sourceTree = "<group>"; };
+		C4EEBCEB1DF1159A0061F6D7 /* DSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActionSheet.h; sourceTree = "<group>"; };
+		C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActionSheet.m; sourceTree = "<group>"; };
+		C4EEBCED1DF1159A0061F6D7 /* DSAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAlert.h; sourceTree = "<group>"; };
+		C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAlert.m; sourceTree = "<group>"; };
+		C4EEBCEF1DF1159A0061F6D7 /* DSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTableCell.h; sourceTree = "<group>"; };
+		C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTableCell.m; sourceTree = "<group>"; };
+		C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSTableCell.xib; sourceTree = "<group>"; };
+		C4EEBCF21DF1159A0061F6D7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */,
-				C4EA7C381D7AD1D400D790CA /* DSActionSheet */,
-				C4EA7C3E1D7AD1D400D790CA /* DSAlert */,
+				C4EEBCE81DF1159A0061F6D7 /* DSAlert */,
 				C4EA7C241D7AD19D00D790CA /* AppDelegate.h */,
 				C4EA7C251D7AD19D00D790CA /* AppDelegate.m */,
 				C4EA7C271D7AD19D00D790CA /* ViewController.h */,
@@ -132,27 +131,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C4EA7C381D7AD1D400D790CA /* DSActionSheet */ = {
+		C4EEBCE81DF1159A0061F6D7 /* DSAlert */ = {
 			isa = PBXGroup;
 			children = (
-				C4EA7C391D7AD1D400D790CA /* DSActionSheet.h */,
-				C4EA7C3A1D7AD1D400D790CA /* DSActionSheet.m */,
-				C4EA7C3B1D7AD1D400D790CA /* DSTableCell.h */,
-				C4EA7C3C1D7AD1D400D790CA /* DSTableCell.m */,
-				C4EA7C3D1D7AD1D400D790CA /* DSTableCell.xib */,
-			);
-			path = DSActionSheet;
-			sourceTree = "<group>";
-		};
-		C4EA7C3E1D7AD1D400D790CA /* DSAlert */ = {
-			isa = PBXGroup;
-			children = (
-				C4EA7C3F1D7AD1D400D790CA /* CALayer+Animation.h */,
-				C4EA7C401D7AD1D400D790CA /* CALayer+Animation.m */,
-				C4EA7C411D7AD1D400D790CA /* DSAlert.h */,
-				C4EA7C421D7AD1D400D790CA /* DSAlert.m */,
-				C4EEBCD31DF10DA20061F6D7 /* UIView+AutoLayout.h */,
-				C4EEBCD41DF10DA20061F6D7 /* UIView+AutoLayout.m */,
+				C4EEBCE91DF1159A0061F6D7 /* CALayer+Animation.h */,
+				C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */,
+				C4EEBCEB1DF1159A0061F6D7 /* DSActionSheet.h */,
+				C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */,
+				C4EEBCED1DF1159A0061F6D7 /* DSAlert.h */,
+				C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */,
+				C4EEBCEF1DF1159A0061F6D7 /* DSTableCell.h */,
+				C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */,
+				C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */,
+				C4EEBCF21DF1159A0061F6D7 /* UIView+AutoLayout.h */,
+				C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */,
 			);
 			path = DSAlert;
 			sourceTree = "<group>";
@@ -221,9 +213,9 @@
 				C4EA7C521D7AD26100D790CA /* 美女.jpg in Resources */,
 				C4EA7C2E1D7AD19D00D790CA /* Assets.xcassets in Resources */,
 				C474C7651D82A55D00D5637F /* VerCodeAlertView.xib in Resources */,
-				C4EA7C451D7AD1D400D790CA /* DSTableCell.xib in Resources */,
 				C4EA7C4C1D7AD1EE00D790CA /* Main.storyboard in Resources */,
 				C4EA7C501D7AD26100D790CA /* 123.png in Resources */,
+				C4EEBCF81DF1159A0061F6D7 /* DSTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,17 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4EA7C461D7AD1D400D790CA /* CALayer+Animation.m in Sources */,
+				C4EEBCF51DF1159A0061F6D7 /* DSActionSheet.m in Sources */,
 				613B1C9E1D81592900625FFF /* Alert6.m in Sources */,
-				C4EA7C471D7AD1D400D790CA /* DSAlert.m in Sources */,
-				C4EA7C441D7AD1D400D790CA /* DSTableCell.m in Sources */,
-				C4EA7C431D7AD1D400D790CA /* DSActionSheet.m in Sources */,
 				C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */,
+				C4EEBCF61DF1159A0061F6D7 /* DSAlert.m in Sources */,
 				C4EA7C4B1D7AD1EE00D790CA /* ViewController2.m in Sources */,
+				C4EEBCF71DF1159A0061F6D7 /* DSTableCell.m in Sources */,
 				C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */,
-				C4EEBCD51DF10DA20061F6D7 /* UIView+AutoLayout.m in Sources */,
 				C4EA7C231D7AD19D00D790CA /* main.m in Sources */,
+				C4EEBCF91DF1159A0061F6D7 /* UIView+AutoLayout.m in Sources */,
 				C474C7641D82A55D00D5637F /* VerCodeAlertView.m in Sources */,
+				C4EEBCF41DF1159A0061F6D7 /* CALayer+Animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
