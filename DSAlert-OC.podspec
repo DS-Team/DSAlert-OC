@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "DSAlert-OC"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = '目前为止，最为精简的 alert 和 actionSheet 封装！DSAlert 让你的弹框不再孤单！'
     s.homepage     = 'https://github.com/DS-Team/DSAlert-OC'
     s.license      = 'MIT'
