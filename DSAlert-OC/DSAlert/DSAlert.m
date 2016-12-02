@@ -770,7 +770,6 @@
     CGFloat top          = CGRectGetHeight(_containerView.frame)-_buttonsHeight;
     [self addLine:CGRectMake(0, top-0.5, buttonWidth, 0.5) toView:_containerView];
     
-    DSWeak;
     if (_buttonTitlesColor.count)
     {
 //        [_buttonTitlesColor enumerateObjectsUsingBlock:^(UIColor *titleColor, NSUInteger idx, BOOL * _Nonnull stop) {
