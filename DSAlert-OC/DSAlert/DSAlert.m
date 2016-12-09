@@ -310,6 +310,7 @@
         _buttonTitles      = [NSArray arrayWithArray:buttonTitles];
         _buttonTitlesColor = [NSArray arrayWithArray:buttonTitlesColor];
         
+        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeFrames:) name:UIDeviceOrientationDidChangeNotification object:nil];
         
         [self performSelector:@selector(loadUI)];
@@ -765,6 +766,15 @@
     {
         return;
     }
+    if (!_buttonTitlesColor || _buttonTitlesColor.count == 0 || _buttonTitlesColor.count <_buttonTitles.count)
+    {
+        NSMutableArray *mutArr = [NSMutableArray array];
+        for (NSInteger i = 0; i < _buttonTitles.count; i ++)
+        {
+            [mutArr addObject:[UIColor blueColor]];
+        }
+        _buttonTitlesColor = [mutArr mutableCopy];
+    }
     CGFloat buttonHeight = kDSAlertButtonHeight;
     CGFloat buttonWidth  = kDSAlertWidth;
     CGFloat top          = CGRectGetHeight(_containerView.frame)-_buttonsHeight;
@@ -774,6 +784,7 @@
     {
         for (NSUInteger j = 0; j < _buttonTitlesColor.count; j++)
         {
+            
             if (1 == _buttonTitles.count)
             {
                 [self addButton:CGRectMake(0, top, buttonWidth, buttonHeight) title:[_buttonTitles firstObject] tag:0  titleColor:_buttonTitlesColor[0]];

@@ -272,7 +272,7 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
         //        temp.bgColor       = [UIColor colorWithRed:0 green:1.0 blue:0 alpha:0.3];
         /*! 开启边缘触摸隐藏alertView */
         temp.isTouchEdgeHide = YES;
-        /*! 添加高斯模糊的样式 */
+        /*! 添加高斯模糊的样式 , [UIColor purpleColor]*/
         temp.blurEffectStyle = DSAlertBlurEffectStyleLight;
         /*! 开启动画 */
         //        temp.isShowAnimate   = YES;
