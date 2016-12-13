@@ -10,6 +10,7 @@
 		613B1C9E1D81592900625FFF /* Alert6.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B1C9D1D81592900625FFF /* Alert6.m */; };
 		613B1CA01D81593300625FFF /* Alert6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B1C9F1D81593300625FFF /* Alert6.xib */; };
 		61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */; };
+		819FD210001DBADB75BFCBFD /* libPods-DSAlert-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D35B4A0EF7E26895148340 /* libPods-DSAlert-OC.a */; };
 		C474C7641D82A55D00D5637F /* VerCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C474C7621D82A55D00D5637F /* VerCodeAlertView.m */; };
 		C474C7651D82A55D00D5637F /* VerCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C474C7631D82A55D00D5637F /* VerCodeAlertView.xib */; };
 		C4EA7C231D7AD19D00D790CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EA7C221D7AD19D00D790CA /* main.m */; };
@@ -31,10 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B8C4830192067B41C9C3E2C /* Pods-DSAlert-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSAlert-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSAlert-OC/Pods-DSAlert-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		613B1C9C1D81592900625FFF /* Alert6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert6.h; sourceTree = "<group>"; };
 		613B1C9D1D81592900625FFF /* Alert6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert6.m; sourceTree = "<group>"; };
 		613B1C9F1D81593300625FFF /* Alert6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alert6.xib; sourceTree = "<group>"; };
 		61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
+		92D35B4A0EF7E26895148340 /* libPods-DSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474C7611D82A55D00D5637F /* VerCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerCodeAlertView.h; sourceTree = "<group>"; };
 		C474C7621D82A55D00D5637F /* VerCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerCodeAlertView.m; sourceTree = "<group>"; };
 		C474C7631D82A55D00D5637F /* VerCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerCodeAlertView.xib; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSTableCell.xib; sourceTree = "<group>"; };
 		C4EEBCF21DF1159A0061F6D7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		DCDDE7B2F70A1DA8C405549A /* Pods-DSAlert-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSAlert-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSAlert-OC/Pods-DSAlert-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +76,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */,
+				819FD210001DBADB75BFCBFD /* libPods-DSAlert-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDF7B4341C18EBACCBA800B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B8C4830192067B41C9C3E2C /* Pods-DSAlert-OC.debug.xcconfig */,
+				DCDDE7B2F70A1DA8C405549A /* Pods-DSAlert-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4EA7C151D7AD19D00D790CA = {
 			isa = PBXGroup;
 			children = (
 				C4EA7C201D7AD19D00D790CA /* DSAlert-OC */,
 				C4EA7C1F1D7AD19D00D790CA /* Products */,
+				BDF7B4341C18EBACCBA800B3 /* Pods */,
+				ED1170627950EE6A01168CC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +165,14 @@
 			path = DSAlert;
 			sourceTree = "<group>";
 		};
+		ED1170627950EE6A01168CC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D35B4A0EF7E26895148340 /* libPods-DSAlert-OC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4EA7C351D7AD19D00D790CA /* Build configuration list for PBXNativeTarget "DSAlert-OC" */;
 			buildPhases = (
+				E0BC5D7837E43744F4ADAD0C /* [CP] Check Pods Manifest.lock */,
 				C4EA7C1A1D7AD19D00D790CA /* Sources */,
 				C4EA7C1B1D7AD19D00D790CA /* Frameworks */,
 				C4EA7C1C1D7AD19D00D790CA /* Resources */,
+				822E7C0FD27F021DC3792F33 /* [CP] Embed Pods Frameworks */,
+				109BA6C43F5C6ED4083A5540 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +247,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		109BA6C43F5C6ED4083A5540 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSAlert-OC/Pods-DSAlert-OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		822E7C0FD27F021DC3792F33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSAlert-OC/Pods-DSAlert-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BC5D7837E43744F4ADAD0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4EA7C1A1D7AD19D00D790CA /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		C4EA7C361D7AD19D00D790CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8C4830192067B41C9C3E2C /* Pods-DSAlert-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -357,6 +433,7 @@
 		};
 		C4EA7C371D7AD19D00D790CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDDE7B2F70A1DA8C405549A /* Pods-DSAlert-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
