@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DSAlert-OC-MyFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DSAlert-OC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2688795F00A3472F7800C85DFB5D6ABD</key>
+		<key>9CD05511A7284342C2C94C60B991097C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CD05511A7284342C2C94C60B991097C</key>
+		<key>C176678DE624C1A0DF9FB4275FE96DC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB27B4DACF63314257B109CE34BB7EDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

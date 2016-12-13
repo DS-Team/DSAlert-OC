@@ -36,12 +36,13 @@
 #import "ViewController2.h"
 
 /*! 使用方法一：文件夹拖入 */
-#import "DSAlert.h"
-#import "DSActionSheet.h"
+//#import "DSAlert.h"
+//#import "DSActionSheet.h"
 
-///*! 使用方法二：pod */
-//#import <DSAlert.h>
-//
+/*! 使用方法二：pod */
+#import <DSAlert.h>
+#import <DSAlert-OC/DSActionSheet.h>
+
 ///*! 使用方法三：frameWork */
 //#import <DSAlertFrameWork/DSAlertFrameWork.h>
 

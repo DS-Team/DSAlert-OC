@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB27B4DACF63314257B109CE34BB7EDB'
-               BlueprintName = 'DSAlert-OC'
+               BlueprintIdentifier = 'C176678DE624C1A0DF9FB4275FE96DC6'
+               BlueprintName = 'DSAlert-OC-MyFramework'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libDSAlert-OC.a'>
+               BuildableName = 'MyFramework.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

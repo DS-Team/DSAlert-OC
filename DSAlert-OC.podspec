@@ -9,5 +9,8 @@ Pod::Spec.new do |s|
     s.source       = { :git => 'https://github.com/DS-Team/DSAlert-OC.git', :tag => s.version.to_s }
     s.source_files = 'DSAlert-OC/DSAlert/*.{h,m}'
     s.requires_arc = true
-    s.resources    = "DSAlert-OC/DSAlert/**/*.{.xib}"
+#   s.resources    = "DSAlert-OC/DSAlert/**/*.{.xib}"
+    s.resource_bundles = {
+        'MyFramework' => ['DSAlert-OC/DSAlert/**/*.{storyboard,xib}']
+    }
 end

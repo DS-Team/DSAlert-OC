@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		613B1C9E1D81592900625FFF /* Alert6.m in Sources */ = {isa = PBXBuildFile; fileRef = 613B1C9D1D81592900625FFF /* Alert6.m */; };
 		613B1CA01D81593300625FFF /* Alert6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613B1C9F1D81593300625FFF /* Alert6.xib */; };
-		61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */; };
 		819FD210001DBADB75BFCBFD /* libPods-DSAlert-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D35B4A0EF7E26895148340 /* libPods-DSAlert-OC.a */; };
 		C474C7641D82A55D00D5637F /* VerCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C474C7621D82A55D00D5637F /* VerCodeAlertView.m */; };
 		C474C7651D82A55D00D5637F /* VerCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C474C7631D82A55D00D5637F /* VerCodeAlertView.xib */; };
@@ -23,12 +22,6 @@
 		C4EA7C501D7AD26100D790CA /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4D1D7AD26000D790CA /* 123.png */; };
 		C4EA7C511D7AD26100D790CA /* 背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4E1D7AD26100D790CA /* 背景.jpg */; };
 		C4EA7C521D7AD26100D790CA /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EA7C4F1D7AD26100D790CA /* 美女.jpg */; };
-		C4EEBCF41DF1159A0061F6D7 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */; };
-		C4EEBCF51DF1159A0061F6D7 /* DSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */; };
-		C4EEBCF61DF1159A0061F6D7 /* DSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */; };
-		C4EEBCF71DF1159A0061F6D7 /* DSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */; };
-		C4EEBCF81DF1159A0061F6D7 /* DSTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */; };
-		C4EEBCF91DF1159A0061F6D7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +29,6 @@
 		613B1C9C1D81592900625FFF /* Alert6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert6.h; sourceTree = "<group>"; };
 		613B1C9D1D81592900625FFF /* Alert6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert6.m; sourceTree = "<group>"; };
 		613B1C9F1D81593300625FFF /* Alert6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alert6.xib; sourceTree = "<group>"; };
-		61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DSAlertFrameWork.framework; sourceTree = "<group>"; };
 		92D35B4A0EF7E26895148340 /* libPods-DSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474C7611D82A55D00D5637F /* VerCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerCodeAlertView.h; sourceTree = "<group>"; };
 		C474C7621D82A55D00D5637F /* VerCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerCodeAlertView.m; sourceTree = "<group>"; };
@@ -56,17 +48,6 @@
 		C4EA7C4D1D7AD26000D790CA /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		C4EA7C4E1D7AD26100D790CA /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景.jpg"; sourceTree = "<group>"; };
 		C4EA7C4F1D7AD26100D790CA /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女.jpg"; sourceTree = "<group>"; };
-		C4EEBCE91DF1159A0061F6D7 /* CALayer+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Animation.h"; sourceTree = "<group>"; };
-		C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Animation.m"; sourceTree = "<group>"; };
-		C4EEBCEB1DF1159A0061F6D7 /* DSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActionSheet.h; sourceTree = "<group>"; };
-		C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActionSheet.m; sourceTree = "<group>"; };
-		C4EEBCED1DF1159A0061F6D7 /* DSAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAlert.h; sourceTree = "<group>"; };
-		C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAlert.m; sourceTree = "<group>"; };
-		C4EEBCEF1DF1159A0061F6D7 /* DSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTableCell.h; sourceTree = "<group>"; };
-		C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTableCell.m; sourceTree = "<group>"; };
-		C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSTableCell.xib; sourceTree = "<group>"; };
-		C4EEBCF21DF1159A0061F6D7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		DCDDE7B2F70A1DA8C405549A /* Pods-DSAlert-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSAlert-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSAlert-OC/Pods-DSAlert-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61EBC03E1D82502000CF55C3 /* DSAlertFrameWork.framework in Frameworks */,
 				819FD210001DBADB75BFCBFD /* libPods-DSAlert-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,8 +93,6 @@
 		C4EA7C201D7AD19D00D790CA /* DSAlert-OC */ = {
 			isa = PBXGroup;
 			children = (
-				61EBC03D1D82502000CF55C3 /* DSAlertFrameWork.framework */,
-				C4EEBCE81DF1159A0061F6D7 /* DSAlert */,
 				C4EA7C241D7AD19D00D790CA /* AppDelegate.h */,
 				C4EA7C251D7AD19D00D790CA /* AppDelegate.m */,
 				C4EA7C271D7AD19D00D790CA /* ViewController.h */,
@@ -145,24 +123,6 @@
 				C4EA7C221D7AD19D00D790CA /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C4EEBCE81DF1159A0061F6D7 /* DSAlert */ = {
-			isa = PBXGroup;
-			children = (
-				C4EEBCE91DF1159A0061F6D7 /* CALayer+Animation.h */,
-				C4EEBCEA1DF1159A0061F6D7 /* CALayer+Animation.m */,
-				C4EEBCEB1DF1159A0061F6D7 /* DSActionSheet.h */,
-				C4EEBCEC1DF1159A0061F6D7 /* DSActionSheet.m */,
-				C4EEBCED1DF1159A0061F6D7 /* DSAlert.h */,
-				C4EEBCEE1DF1159A0061F6D7 /* DSAlert.m */,
-				C4EEBCEF1DF1159A0061F6D7 /* DSTableCell.h */,
-				C4EEBCF01DF1159A0061F6D7 /* DSTableCell.m */,
-				C4EEBCF11DF1159A0061F6D7 /* DSTableCell.xib */,
-				C4EEBCF21DF1159A0061F6D7 /* UIView+AutoLayout.h */,
-				C4EEBCF31DF1159A0061F6D7 /* UIView+AutoLayout.m */,
-			);
-			path = DSAlert;
 			sourceTree = "<group>";
 		};
 		ED1170627950EE6A01168CC8 /* Frameworks */ = {
@@ -242,7 +202,6 @@
 				C474C7651D82A55D00D5637F /* VerCodeAlertView.xib in Resources */,
 				C4EA7C4C1D7AD1EE00D790CA /* Main.storyboard in Resources */,
 				C4EA7C501D7AD26100D790CA /* 123.png in Resources */,
-				C4EEBCF81DF1159A0061F6D7 /* DSTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,17 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4EEBCF51DF1159A0061F6D7 /* DSActionSheet.m in Sources */,
 				613B1C9E1D81592900625FFF /* Alert6.m in Sources */,
 				C4EA7C291D7AD19D00D790CA /* ViewController.m in Sources */,
-				C4EEBCF61DF1159A0061F6D7 /* DSAlert.m in Sources */,
 				C4EA7C4B1D7AD1EE00D790CA /* ViewController2.m in Sources */,
-				C4EEBCF71DF1159A0061F6D7 /* DSTableCell.m in Sources */,
 				C4EA7C261D7AD19D00D790CA /* AppDelegate.m in Sources */,
 				C4EA7C231D7AD19D00D790CA /* main.m in Sources */,
-				C4EEBCF91DF1159A0061F6D7 /* UIView+AutoLayout.m in Sources */,
 				C474C7641D82A55D00D5637F /* VerCodeAlertView.m in Sources */,
-				C4EEBCF41DF1159A0061F6D7 /* CALayer+Animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B56E9B443848EC4003021522AF5E052 /* UIView+AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE88ABBA8B90C00C4E626DF090F8DC7 /* UIView+AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C335DB25A1B2BAADC8E6FFD9AFFCA9E /* DSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 326ACC9B6E38C21BC7C423AD18DB3F41 /* DSAlert.m */; };
+		362D35B271D742FD67C45BBEFED2D9BB /* DSAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0447627A0481AE818A3C82528BFFBF10 /* DSAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD9CD5352779DE000BB6CCF357ED6AD /* DSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A115BAC467A4D3377B9A185C1882887 /* DSActionSheet.m */; };
+		5BAFB0A05DAA06A30F725D571E7586EE /* CALayer+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C9CB6A3B4D7D6D22C86BCE7865FD7D /* CALayer+Animation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		681042844F76065C929658EF931E61EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6B381F9E990B63E523CB2078BE3C211E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		720EED5AD62530D4C100E5BE468E5C8B /* DSActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C451A7C5ACF7E751D23BD5DCDF0DF5 /* DSActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		722227EF9970FED287BADC3F06923FB6 /* DSAlert-OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9656B203836E45C06F5A8DAA24245 /* DSAlert-OC-dummy.m */; };
-		7293AFEB5D0F1EB186558E131324DA7D /* DSAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E49C2AFC252B605B70747F2DE22C8A /* DSAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6C1E3030D6AC923813E17802ABED5D9 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B46646541C0B7747269EF2C39A6588A /* CALayer+Animation.m */; };
+		7EF0D0539DC24DC8AA017CA648F630F4 /* UIView+AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 094904E31F235CEF9E8C11C1E711597B /* UIView+AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87CCAA1C6F912B9D63FA5482F27CF54B /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6E343D149B0CC10DB2D87170D51F26 /* UIView+AutoLayout.m */; };
+		A60D5D22A60E040D682F9B6920B1DB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A671A2EFBC4DCCAEAF90DA4704918DF1 /* DSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A975C89ED82CD37FE5AF461CFAFB86C /* DSTableCell.m */; };
 		B6DE48850B1379FB475A12C22D5699B8 /* Pods-DSAlert-OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CAB6A035692919A54BD6003252B5DE /* Pods-DSAlert-OC-dummy.m */; };
-		BA46DB8A1CE8DB5FBC8633F8F4186EB9 /* DSTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B1959EB811DCD3C3788B1760FDC0001E /* DSTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6D30E74D5A9F0B9A97734BA9B22A1E4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D1532F425D88F49EFBD33D7A776CF /* UIView+AutoLayout.m */; };
-		C9C517EC07D6EE349342ABE041B24E50 /* DSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C95AF2C47D00F865C30BEA8E0F5E089A /* DSTableCell.m */; };
-		CFBBCADF6BDE09E05E2344F0340AF45A /* CALayer+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 317D4CFDACB19A0B2F1D617ACDB78F2D /* CALayer+Animation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2BD69307BB4AEB66BFDC5350C3A98FF /* DSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D02A72D8559D6814554357C0B29AD /* DSAlert.m */; };
-		FACD92A5851B2D0CB1D1839AA8DA238E /* DSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5FC41BBC173CF14D50FB352F11E23 /* DSActionSheet.m */; };
+		BBB453B643F303415EF8865C36A7332E /* DSActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CEEA2B9FEB0457ACF97DBB7F97CEB2A /* DSActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C759B557BD3CF64CBA38FD5E14AF1FC3 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA76CF9891ACBB5F66F34DF9445744 /* CALayer+Animation.m */; };
+		E2F1BF4A29C6CAD26C024CCD54D1903B /* DSTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2244BEC3A30F64B3D8149F7E78AACC8E /* DSTableCell.xib */; };
+		ED3692B2800E72ECB661688B9907031C /* DSAlert-OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 225669465D09F0D8A708A07AD5757FD2 /* DSAlert-OC-dummy.m */; };
+		FB03EE16F9854E0E64C3BD072F6C0B8D /* DSTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C01E102582CB2786CF51FFF86AB1B9BC /* DSTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,44 +29,61 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2688795F00A3472F7800C85DFB5D6ABD;
+			remoteGlobalIDString = CB27B4DACF63314257B109CE34BB7EDB;
 			remoteInfo = "DSAlert-OC";
+		};
+		E0DC3888F9777C214F20D3A03D415BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C176678DE624C1A0DF9FB4275FE96DC6;
+			remoteInfo = "DSAlert-OC-MyFramework";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		049C0C38A66EFD75B8A1CF7A958FC52B /* libPods-DSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0447627A0481AE818A3C82528BFFBF10 /* DSAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSAlert.h; path = "DSAlert-OC/DSAlert/DSAlert.h"; sourceTree = "<group>"; };
+		094904E31F235CEF9E8C11C1E711597B /* UIView+AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "DSAlert-OC/DSAlert/UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		1A115BAC467A4D3377B9A185C1882887 /* DSActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSActionSheet.m; path = "DSAlert-OC/DSAlert/DSActionSheet.m"; sourceTree = "<group>"; };
+		2244BEC3A30F64B3D8149F7E78AACC8E /* DSTableCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DSTableCell.xib; path = "DSAlert-OC/DSAlert/DSTableCell.xib"; sourceTree = "<group>"; };
+		225669465D09F0D8A708A07AD5757FD2 /* DSAlert-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSAlert-OC-dummy.m"; sourceTree = "<group>"; };
 		23D8014D3B0320E94E3D78C9D8185A8D /* Pods-DSAlert-OC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DSAlert-OC-frameworks.sh"; sourceTree = "<group>"; };
-		26C9656B203836E45C06F5A8DAA24245 /* DSAlert-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSAlert-OC-dummy.m"; sourceTree = "<group>"; };
-		2DE88ABBA8B90C00C4E626DF090F8DC7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "DSAlert-OC/DSAlert/UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		317D4CFDACB19A0B2F1D617ACDB78F2D /* CALayer+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Animation.h"; path = "DSAlert-OC/DSAlert/CALayer+Animation.h"; sourceTree = "<group>"; };
-		495D1532F425D88F49EFBD33D7A776CF /* UIView+AutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "DSAlert-OC/DSAlert/UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		4B46646541C0B7747269EF2C39A6588A /* CALayer+Animation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+Animation.m"; path = "DSAlert-OC/DSAlert/CALayer+Animation.m"; sourceTree = "<group>"; };
-		51C451A7C5ACF7E751D23BD5DCDF0DF5 /* DSActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSActionSheet.h; path = "DSAlert-OC/DSAlert/DSActionSheet.h"; sourceTree = "<group>"; };
-		5C054B576C6246E652A19C348DDE9D1C /* DSAlert-OC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DSAlert-OC.xcconfig"; sourceTree = "<group>"; };
-		6C8833B2013660E15D0C82DCB4B66B4B /* DSAlert-OC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSAlert-OC-prefix.pch"; sourceTree = "<group>"; };
+		326ACC9B6E38C21BC7C423AD18DB3F41 /* DSAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSAlert.m; path = "DSAlert-OC/DSAlert/DSAlert.m"; sourceTree = "<group>"; };
+		4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DSAlert-OC.xcconfig"; sourceTree = "<group>"; };
+		4CF3CA3FD1F56FE5D20BC5394585C40F /* DSAlert-OC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSAlert-OC-prefix.pch"; sourceTree = "<group>"; };
+		65FA8A22D29E3A84362789A264767716 /* ResourceBundle-MyFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MyFramework-Info.plist"; sourceTree = "<group>"; };
 		7E89ECC4E2A5DF09887B090BB31FFAC3 /* Pods-DSAlert-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DSAlert-OC.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		7F6E343D149B0CC10DB2D87170D51F26 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "DSAlert-OC/DSAlert/UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		81EF3EBF979B887D892E28ED95BCBA46 /* libDSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libDSAlert-OC.a"; path = "libDSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A975C89ED82CD37FE5AF461CFAFB86C /* DSTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSTableCell.m; path = "DSAlert-OC/DSAlert/DSTableCell.m"; sourceTree = "<group>"; };
+		8CEEA2B9FEB0457ACF97DBB7F97CEB2A /* DSActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSActionSheet.h; path = "DSAlert-OC/DSAlert/DSActionSheet.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B3779EB2ABED16D516C5C0F92EA5EDB /* Pods-DSAlert-OC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DSAlert-OC-resources.sh"; sourceTree = "<group>"; };
-		B1959EB811DCD3C3788B1760FDC0001E /* DSTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSTableCell.h; path = "DSAlert-OC/DSAlert/DSTableCell.h"; sourceTree = "<group>"; };
+		A8C9CB6A3B4D7D6D22C86BCE7865FD7D /* CALayer+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Animation.h"; path = "DSAlert-OC/DSAlert/CALayer+Animation.h"; sourceTree = "<group>"; };
+		A8FA76CF9891ACBB5F66F34DF9445744 /* CALayer+Animation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+Animation.m"; path = "DSAlert-OC/DSAlert/CALayer+Animation.m"; sourceTree = "<group>"; };
 		B9CAB6A035692919A54BD6003252B5DE /* Pods-DSAlert-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DSAlert-OC-dummy.m"; sourceTree = "<group>"; };
-		C6C5FC41BBC173CF14D50FB352F11E23 /* DSActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSActionSheet.m; path = "DSAlert-OC/DSAlert/DSActionSheet.m"; sourceTree = "<group>"; };
+		C01E102582CB2786CF51FFF86AB1B9BC /* DSTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSTableCell.h; path = "DSAlert-OC/DSAlert/DSTableCell.h"; sourceTree = "<group>"; };
 		C90EF427FDD7A32215B505015DEC9A83 /* Pods-DSAlert-OC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DSAlert-OC-acknowledgements.plist"; sourceTree = "<group>"; };
-		C95AF2C47D00F865C30BEA8E0F5E089A /* DSTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSTableCell.m; path = "DSAlert-OC/DSAlert/DSTableCell.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D375BEC7FF65C8DB5425471CF0FDBAFC /* Pods-DSAlert-OC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DSAlert-OC-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D5E49C2AFC252B605B70747F2DE22C8A /* DSAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSAlert.h; path = "DSAlert-OC/DSAlert/DSAlert.h"; sourceTree = "<group>"; };
-		F33D02A72D8559D6814554357C0B29AD /* DSAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSAlert.m; path = "DSAlert-OC/DSAlert/DSAlert.m"; sourceTree = "<group>"; };
-		F9216E9F4DF3BBF5472A3287C95F46A2 /* libDSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B04DD6CA8DD21FCF424F94FBB6EFC5 /* MyFramework.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyFramework.bundle; path = MyFramework.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247FF2302583065C8972853A348B018 /* libPods-DSAlert-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DSAlert-OC.a"; path = "libPods-DSAlert-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA995929F87B0C4E181FDC04187884DA /* Pods-DSAlert-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DSAlert-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5845147C2A3291AD5E00489E656EE1DB /* Frameworks */ = {
+		0CFAC7C15EBB379BA7FD7F077965536A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B381F9E990B63E523CB2078BE3C211E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD769495EA1CAC3186E03E8BAE13D7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60D5D22A60E040D682F9B6920B1DB11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30A8C569ECCD79FFA974844B771FB08C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2244BEC3A30F64B3D8149F7E78AACC8E /* DSTableCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C6FAE41D72636C6FDC83EC656805530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80C86DCC2CF639CA8E68E756A53DBB25 /* DSAlert-OC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67D50F303E4299B8E891DCC198CD5057 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */,
+				225669465D09F0D8A708A07AD5757FD2 /* DSAlert-OC-dummy.m */,
+				4CF3CA3FD1F56FE5D20BC5394585C40F /* DSAlert-OC-prefix.pch */,
+				65FA8A22D29E3A84362789A264767716 /* ResourceBundle-MyFramework-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DSAlert-OC";
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,48 +139,40 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BC9CCE506F0F7732696CA9887F281D61 /* Pods */,
-				87351627636A92C4E39F2C22F57D4BE6 /* Products */,
+				4C6FAE41D72636C6FDC83EC656805530 /* Pods */,
+				9633C26AD82A53957F10A76ECF483342 /* Products */,
 				DBBE1543E6A280B597F09B9E493CBFF7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87351627636A92C4E39F2C22F57D4BE6 /* Products */ = {
+		80C86DCC2CF639CA8E68E756A53DBB25 /* DSAlert-OC */ = {
 			isa = PBXGroup;
 			children = (
-				F9216E9F4DF3BBF5472A3287C95F46A2 /* libDSAlert-OC.a */,
-				049C0C38A66EFD75B8A1CF7A958FC52B /* libPods-DSAlert-OC.a */,
+				A8C9CB6A3B4D7D6D22C86BCE7865FD7D /* CALayer+Animation.h */,
+				A8FA76CF9891ACBB5F66F34DF9445744 /* CALayer+Animation.m */,
+				8CEEA2B9FEB0457ACF97DBB7F97CEB2A /* DSActionSheet.h */,
+				1A115BAC467A4D3377B9A185C1882887 /* DSActionSheet.m */,
+				0447627A0481AE818A3C82528BFFBF10 /* DSAlert.h */,
+				326ACC9B6E38C21BC7C423AD18DB3F41 /* DSAlert.m */,
+				C01E102582CB2786CF51FFF86AB1B9BC /* DSTableCell.h */,
+				8A975C89ED82CD37FE5AF461CFAFB86C /* DSTableCell.m */,
+				094904E31F235CEF9E8C11C1E711597B /* UIView+AutoLayout.h */,
+				7F6E343D149B0CC10DB2D87170D51F26 /* UIView+AutoLayout.m */,
+				30A8C569ECCD79FFA974844B771FB08C /* Resources */,
+				67D50F303E4299B8E891DCC198CD5057 /* Support Files */,
+			);
+			name = "DSAlert-OC";
+			path = "DSAlert-OC";
+			sourceTree = "<group>";
+		};
+		9633C26AD82A53957F10A76ECF483342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81EF3EBF979B887D892E28ED95BCBA46 /* libDSAlert-OC.a */,
+				E247FF2302583065C8972853A348B018 /* libPods-DSAlert-OC.a */,
+				E1B04DD6CA8DD21FCF424F94FBB6EFC5 /* MyFramework.bundle */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		99464410F5466D7BE6968B3F6F792281 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C054B576C6246E652A19C348DDE9D1C /* DSAlert-OC.xcconfig */,
-				26C9656B203836E45C06F5A8DAA24245 /* DSAlert-OC-dummy.m */,
-				6C8833B2013660E15D0C82DCB4B66B4B /* DSAlert-OC-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DSAlert-OC";
-			sourceTree = "<group>";
-		};
-		A72FE10D4A13F47CAFF7A3FFFFBADC72 /* DSAlert-OC */ = {
-			isa = PBXGroup;
-			children = (
-				317D4CFDACB19A0B2F1D617ACDB78F2D /* CALayer+Animation.h */,
-				4B46646541C0B7747269EF2C39A6588A /* CALayer+Animation.m */,
-				51C451A7C5ACF7E751D23BD5DCDF0DF5 /* DSActionSheet.h */,
-				C6C5FC41BBC173CF14D50FB352F11E23 /* DSActionSheet.m */,
-				D5E49C2AFC252B605B70747F2DE22C8A /* DSAlert.h */,
-				F33D02A72D8559D6814554357C0B29AD /* DSAlert.m */,
-				B1959EB811DCD3C3788B1760FDC0001E /* DSTableCell.h */,
-				C95AF2C47D00F865C30BEA8E0F5E089A /* DSTableCell.m */,
-				2DE88ABBA8B90C00C4E626DF090F8DC7 /* UIView+AutoLayout.h */,
-				495D1532F425D88F49EFBD33D7A776CF /* UIView+AutoLayout.m */,
-				99464410F5466D7BE6968B3F6F792281 /* Support Files */,
-			);
-			path = "DSAlert-OC";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -143,14 +181,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC9CCE506F0F7732696CA9887F281D61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A72FE10D4A13F47CAFF7A3FFFFBADC72 /* DSAlert-OC */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DBBE1543E6A280B597F09B9E493CBFF7 /* Targets Support Files */ = {
@@ -179,38 +209,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5C58D1DF958E5EBD8F939FC0801B48AF /* Headers */ = {
+		85A3572513CA8EB29D1EA2797BBD30D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBBCADF6BDE09E05E2344F0340AF45A /* CALayer+Animation.h in Headers */,
-				720EED5AD62530D4C100E5BE468E5C8B /* DSActionSheet.h in Headers */,
-				7293AFEB5D0F1EB186558E131324DA7D /* DSAlert.h in Headers */,
-				BA46DB8A1CE8DB5FBC8633F8F4186EB9 /* DSTableCell.h in Headers */,
-				2B56E9B443848EC4003021522AF5E052 /* UIView+AutoLayout.h in Headers */,
+				5BAFB0A05DAA06A30F725D571E7586EE /* CALayer+Animation.h in Headers */,
+				BBB453B643F303415EF8865C36A7332E /* DSActionSheet.h in Headers */,
+				362D35B271D742FD67C45BBEFED2D9BB /* DSAlert.h in Headers */,
+				FB03EE16F9854E0E64C3BD072F6C0B8D /* DSTableCell.h in Headers */,
+				7EF0D0539DC24DC8AA017CA648F630F4 /* UIView+AutoLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2688795F00A3472F7800C85DFB5D6ABD /* DSAlert-OC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D24C3E8FBB20816C6D2DA2A531944C7B /* Build configuration list for PBXNativeTarget "DSAlert-OC" */;
-			buildPhases = (
-				0359672112D32C76DA04CB62566B2365 /* Sources */,
-				5845147C2A3291AD5E00489E656EE1DB /* Frameworks */,
-				5C58D1DF958E5EBD8F939FC0801B48AF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "DSAlert-OC";
-			productName = "DSAlert-OC";
-			productReference = F9216E9F4DF3BBF5472A3287C95F46A2 /* libDSAlert-OC.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		9CD05511A7284342C2C94C60B991097C /* Pods-DSAlert-OC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20FC98FE576E5910934D1D7C61B7AE5 /* Build configuration list for PBXNativeTarget "Pods-DSAlert-OC" */;
@@ -225,7 +238,42 @@
 			);
 			name = "Pods-DSAlert-OC";
 			productName = "Pods-DSAlert-OC";
-			productReference = 049C0C38A66EFD75B8A1CF7A958FC52B /* libPods-DSAlert-OC.a */;
+			productReference = E247FF2302583065C8972853A348B018 /* libPods-DSAlert-OC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C176678DE624C1A0DF9FB4275FE96DC6 /* DSAlert-OC-MyFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804890785486776308AFF721D00C8874 /* Build configuration list for PBXNativeTarget "DSAlert-OC-MyFramework" */;
+			buildPhases = (
+				97D669137AE6E6204FFD599E29E23BBC /* Sources */,
+				0CFAC7C15EBB379BA7FD7F077965536A /* Frameworks */,
+				124FF5D3995F1C75C4EEB715F487CB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DSAlert-OC-MyFramework";
+			productName = "DSAlert-OC-MyFramework";
+			productReference = E1B04DD6CA8DD21FCF424F94FBB6EFC5 /* MyFramework.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CB27B4DACF63314257B109CE34BB7EDB /* DSAlert-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CC4ECA95BB77F2FBD64D57D9B8AEAE /* Build configuration list for PBXNativeTarget "DSAlert-OC" */;
+			buildPhases = (
+				199CB914544AB5218B7180A1B428953F /* Sources */,
+				8AD769495EA1CAC3186E03E8BAE13D7F /* Frameworks */,
+				85A3572513CA8EB29D1EA2797BBD30D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D9035F3C1930E9FA6323A0A3383466 /* PBXTargetDependency */,
+			);
+			name = "DSAlert-OC";
+			productName = "DSAlert-OC";
+			productReference = 81EF3EBF979B887D892E28ED95BCBA46 /* libDSAlert-OC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -245,27 +293,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87351627636A92C4E39F2C22F57D4BE6 /* Products */;
+			productRefGroup = 9633C26AD82A53957F10A76ECF483342 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2688795F00A3472F7800C85DFB5D6ABD /* DSAlert-OC */,
+				CB27B4DACF63314257B109CE34BB7EDB /* DSAlert-OC */,
+				C176678DE624C1A0DF9FB4275FE96DC6 /* DSAlert-OC-MyFramework */,
 				9CD05511A7284342C2C94C60B991097C /* Pods-DSAlert-OC */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		124FF5D3995F1C75C4EEB715F487CB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F1BF4A29C6CAD26C024CCD54D1903B /* DSTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0359672112D32C76DA04CB62566B2365 /* Sources */ = {
+		199CB914544AB5218B7180A1B428953F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C1E3030D6AC923813E17802ABED5D9 /* CALayer+Animation.m in Sources */,
-				FACD92A5851B2D0CB1D1839AA8DA238E /* DSActionSheet.m in Sources */,
-				722227EF9970FED287BADC3F06923FB6 /* DSAlert-OC-dummy.m in Sources */,
-				F2BD69307BB4AEB66BFDC5350C3A98FF /* DSAlert.m in Sources */,
-				C9C517EC07D6EE349342ABE041B24E50 /* DSTableCell.m in Sources */,
-				C6D30E74D5A9F0B9A97734BA9B22A1E4 /* UIView+AutoLayout.m in Sources */,
+				C759B557BD3CF64CBA38FD5E14AF1FC3 /* CALayer+Animation.m in Sources */,
+				4FD9CD5352779DE000BB6CCF357ED6AD /* DSActionSheet.m in Sources */,
+				ED3692B2800E72ECB661688B9907031C /* DSAlert-OC-dummy.m in Sources */,
+				0C335DB25A1B2BAADC8E6FFD9AFFCA9E /* DSAlert.m in Sources */,
+				A671A2EFBC4DCCAEAF90DA4704918DF1 /* DSTableCell.m in Sources */,
+				87CCAA1C6F912B9D63FA5482F27CF54B /* UIView+AutoLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,21 +337,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97D669137AE6E6204FFD599E29E23BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		47D9035F3C1930E9FA6323A0A3383466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DSAlert-OC-MyFramework";
+			target = C176678DE624C1A0DF9FB4275FE96DC6 /* DSAlert-OC-MyFramework */;
+			targetProxy = E0DC3888F9777C214F20D3A03D415BF9 /* PBXContainerItemProxy */;
+		};
 		4DF02E75CC5283FFB695FBC6A3F81AEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DSAlert-OC";
-			target = 2688795F00A3472F7800C85DFB5D6ABD /* DSAlert-OC */;
+			target = CB27B4DACF63314257B109CE34BB7EDB /* DSAlert-OC */;
 			targetProxy = CCC7296BF3FC7D0159879A4E9A4398E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5FAE811BB008AC6AB543E2E31343472D /* Debug */ = {
+		64AAB2D3F4782296EB114C99C716832C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C054B576C6246E652A19C348DDE9D1C /* DSAlert-OC.xcconfig */;
+			baseConfigurationReference = 4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DSAlert-OC";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DSAlert-OC/ResourceBundle-MyFramework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = MyFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		72AC363249FBEC37D9E85C8F5ED40D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -312,6 +402,23 @@
 			};
 			name = Debug;
 		};
+		7510B84ECFCFA97C4470A875D39CDF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DSAlert-OC";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DSAlert-OC/ResourceBundle-MyFramework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = MyFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		76233AEE3E76FB7C19CE09EEBCE28FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA995929F87B0C4E181FDC04187884DA /* Pods-DSAlert-OC.release.xcconfig */;
@@ -330,29 +437,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		796C2ED7D58B78241FAAC724F1CC961A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C054B576C6246E652A19C348DDE9D1C /* DSAlert-OC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DSAlert-OC/DSAlert-OC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -421,6 +505,29 @@
 			};
 			name = Debug;
 		};
+		B9CCEB959FD1C68554D16E1400DDFC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA1D72DE1CC2447E2D0454E327896B5 /* DSAlert-OC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DSAlert-OC/DSAlert-OC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,11 +584,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D24C3E8FBB20816C6D2DA2A531944C7B /* Build configuration list for PBXNativeTarget "DSAlert-OC" */ = {
+		804890785486776308AFF721D00C8874 /* Build configuration list for PBXNativeTarget "DSAlert-OC-MyFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FAE811BB008AC6AB543E2E31343472D /* Debug */,
-				796C2ED7D58B78241FAAC724F1CC961A /* Release */,
+				64AAB2D3F4782296EB114C99C716832C /* Debug */,
+				7510B84ECFCFA97C4470A875D39CDF3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CC4ECA95BB77F2FBD64D57D9B8AEAE /* Build configuration list for PBXNativeTarget "DSAlert-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AC363249FBEC37D9E85C8F5ED40D8A /* Debug */,
+				B9CCEB959FD1C68554D16E1400DDFC10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
