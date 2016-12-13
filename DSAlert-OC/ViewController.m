@@ -84,7 +84,8 @@ static NSString * const titleMsg2 = @"对于 MacBook，我们给自己设定了�
                                                  @"3、自定义背景图片",
                                                  @"4、内置图片和文字，可滑动查看",
                                                  @"5、完全自定义alert",
-                                                 @"6、完全自定义alert-autolayout"
+                                                 @"6、完全自定义alert-autolayout",
+                                                 @"7、终于可以愉快的 pod 导入了，pod 导入：` pod 'DSAlert-OC' ` 【最新版本：1.0.8】"
                                                  ],
                       @[@"1、actionsheet",
                         @"2、actionsheet带标题",
